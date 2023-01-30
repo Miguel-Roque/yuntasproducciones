@@ -1,5 +1,26 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+  .float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 900;
+  }
+</style>
+
+<a href="https://wa.me/912849782?text=Hi%20there!" target="_blank">
+  <div class="float-button">
+    Chat on WhatsApp
+  </div>
+</a>
+
     <footer class="footer">
     <div class="redes">
       <a href="#">Sigue a Yuntas Producciones </a>

@@ -25,6 +25,7 @@ nav{
     background: black;
     height: 80px;
     width: 100%;
+    
 }
 
 .barra-blanca {
@@ -49,6 +50,7 @@ nav{
 nav ul{
     margin-right: 20px;
     text-align: center;
+   
 }
 
 nav ul li{
@@ -99,6 +101,7 @@ nav > ul > li > ul{
     top: 100px;
     padding-left: 10%;
     padding-right: 10%;
+    
 }
 
 
@@ -194,8 +197,9 @@ section{
         text-align: center;
         transition: all .5s;
         overflow-y: scroll;
-        z-index: 900;
+        
         padding-left: 0;
+        
     }
     nav ul li{
         display: block;
@@ -232,6 +236,10 @@ section{
     }
     nav ul li ul li img {
         position: static;
+    }
+    .nav-principal{
+        position: fixed;
+        z-index: 999;
     }
     #check:checked ~ ul{
         left:0;
