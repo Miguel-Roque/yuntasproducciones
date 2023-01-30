@@ -33,22 +33,10 @@
 
                         <ul class="submenu9" style="z-index: 90;">
                             <li><a href="pantallas_led"><img src="public/icons/1-h.png">Pantallas Led</a>
-                                        <ul class="submenu9 submenu-submenu" style="z-index: 90;">
-                                            <li><a href="#">Interiores y exteriores</a></li>
-                                            <li><a href="#">Vallas publicitarias</a></li>
-                                            <li><a href="#">Pantallas informativas</a></li>
-                                            <li><a href="#">Pantallas gigantes</a></li>
-                                            <li><a href="#">Paneles informativos</a></li>
-                                        </ul>        
+                                              
                             </li>
                             <li><a href="ventiladores_holograficos"><img src="public/icons/2-h.png">Ventiladores<br>Holográficos</a>
-                                        <ul class="submenu9 submenu-submenu" style="z-index: 90;">
-                                            <li><a href="#">Retail</a></li>
-                                            <li><a href="#">Negocios u tiendas</a></li>
-                                            <li><a href="#">Eventos y entretenimiento</a></li>
-                                            <li><a href="#">Empresa u oficina</a></li>
-                                            <li><a href="#">Interiores o exteriores</a></li>
-                                        </ul>      
+                                            
                             </li>
                             <li><a href="letreros_neon_led"><img src="public/icons/3-h.png">Letreros Neon Led</a></li>
                             <li><a href="cubos_led"><img src="public/icons/4-h.png">Cubos Led</a></li>
