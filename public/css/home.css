@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&display=swap');
+
+.banner{
+    
+    height: calc(100vh - 59px);
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .1s ease-in-out;
+    background-image: url('../img/fondo1.webp');
+    animation: banner 30s infinite linear;
+}
+/* @keyframes banner{
+    0%{
+        background-image: url('../img/fondo1.webp');
+    }
+    33%{
+        background-image: url('../img/fondo1.webp');
+    }
+    34%{
+        background-image: url('../img/fondo2.webp');
+    }
+    66%{
+        background-image: url('../img/fondo2.webp');
+    }
+    67%{
+        background-image: url('../img/fondo3.webp');
+    }
+    100%{
+        background-image: url('../img/fondo3.webp');
+    }
+} */
+.imagen{
+    position: absolute;
+width: 447px;
+height: 447px;
+left: -09px;
+transform: rotate(-9.69deg);
+}
+.titulos{
+    position: absolute;
+height: 81px;
+left: 74px;
+width: 50%;
+bottom: 100px;
+font-family: 'Bungee';
+font-style: normal;
+font-weight: 400;
+font-size: 4rem;
+/*line-height: 77px;*/
+
+color: #FFFFFF;
+}
+.titulos2{
+font-family: 'Bungee';
+font-style: normal;
+font-weight: 400;
+font-size: 2rem;
+width: 100%;
+text-align: center;
+margin: 3rem 0 3rem 0;
+/*line-height: 77px;*/
+
+color: black;
+}
+@media (min-width: 768px) { 
+    .titulos{
+        font-size: 4.5rem;
+    }
+    .titulos2{
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 1024px) { 
+    .titulos{
+        font-size: 6rem;
+    }
+    .titulos2{
+        font-size: 3.2rem;
+    }
+}
+.subtitulo{
+    
+    position: absolute;
+    height: 96px;
+    left: 86px;
+    /*top: 711px;*/
+    margin-top: 30rem;
+    
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 96px;
+    bottom: 0;
+
+    
+    
+    color: #FFFFFF;
+}
+.subtitulo2{
+
+    font-family: 'Bungee';
+font-style: normal;
+font-weight: 400;
+    font-size: 2.1rem;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+@media (min-width: 768px) { 
+    .subtitulo{
+        font-size: 4rem;
+    }
+}
+@media (min-width: 1024px) { 
+    .subtitulo{
+        font-size: 5.2rem;
+    }
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00021B;
+    color: #fff;
+    
+}
+.imagen-info img{
+    width: 100%;  
+}
+@media (min-width: 1024px) { 
+    .imagen-info img{
+        width: 560px;  
+    }
+}
+
+.imagen-info h2{
+    font-size: 50px;
+    font-family: 'Bungee', cursive;
+}
+.home-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 60px;
+}
+@media (min-width: 768px) { 
+    .home-info{
+        flex-direction: row;
+    }
+}
+.texto-info{
+    border-top: 5px solid #2aa4bf;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 5px solid #2aa4bf;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+.texto-info h3{
+    line-height: 42px;
+    font-size: 3rem;
+}
+.padretexto{
+    padding: 0 77px;
+    margin-top: 40px;
+}
+.rotar{
+   
+   font-family: 'Bungee', cursive;
+   text-align: center;
+   font-size: 50px;
+}
+@media (min-width: 1200px) { 
+    .rotar{
+        height: 0px;
+        margin-top: 220px;
+        margin-left: -65px;
+        transform: rotate(90deg);
+    }
+}
+.imgTexto h2{
+    text-align: center;
+}
+@media (min-width: 1200px) { 
+    .imgTexto h2{
+        text-align: left;
+    }
+}
+.imagen-info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 20px;
+}
+@media (min-width: 768px) { 
+    .imagen-info{
+        padding: 0;
+    }
+}
+@media (min-width: 1200px) { 
+    .imagen-info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.whatsapp {
+    background-color:#2aa4bf;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    width: auto;
+    padding: 1rem;
+    height: 60px;
+    text-decoration: none;
+}
+
+.whatsapp-presupuesto{
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: center;
+margin-top: 50px;
+text-decoration: none;
+width: auto;
+justify-content: center;
+}
+.whatsapp-presupuesto p{
+    margin: 0px;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+
+}
+@media screen and (max-width: 768px){
+      .imagen{
+        width: 247px;
+        height: 347px;
+        
+    }
+}
+
+
+.item_product .subtitulo2{
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-size: 2.1rem;
+}
+
+.item_product:hover > img{
+    transition: all .3s;
+    margin-top:  -10px;
+    z-index: 999;
+    top: -2px;
+    /* transform: scale(1.1); */
+}
+  
+.item_product:hover > .more_info{
+    visibility: visible !important;
+    transition: all .5s;
+    z-index: 999;
+}
