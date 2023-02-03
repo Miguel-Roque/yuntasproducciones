@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="public/css/csswasap.css" >
     <link rel="stylesheet" href="public/css/productos.css" >
 
-    <title>Relojes Digitales</title>
+    <title><?= $producto['name'] ?></title>
     <link rel="icon" type="image/x-icon" href="public/nosotros/logowhite2.webp">
     <?php require_once("views/layouts/enlaces.php") ?>
   </head>
@@ -25,13 +26,13 @@
         <div id="carouselExampleIntervals" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
-              <img src="public/relojes/reloj_1.webp" class="d-block w-100" alt="slide1">
+              <img src="public/ventiladores_holograficos/ventilador_holografico_1.jpg" class="d-block w-100" alt="slide1">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="public/relojes/reloj_2.webp" class="d-block w-100" alt="slide2">
+              <img src="public/ventiladores_holograficos/ventilador_holografico_2.jpg" class="d-block w-100" alt="slide2">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="public/relojes/reloj_3.jpg" class="d-block w-100" alt="slide3">
+              <img src="public/ventiladores_holograficos/ventilador_holografico_3.jpg" class="d-block w-100" alt="slide3">
             </div>
           </div>
           <div class="carousel-indicators">
@@ -45,48 +46,62 @@
 
     <div class="info-2 info-2-first">
       <div class="titulos2-container">  
-        <h1 class="titulos2">¿Dondé puedes usar un reloj digital?</h1>
+        <h1 class="titulos2"><?= $producto['titulo'] ?></h1>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis dolore mollitia deserunt placeat quod, dolorum velit rem. Quibusdam animi magnam voluptatibus aliquid ab? Earum suscipit cumque aut explicabo beatae!</p>
+      <p><?= $producto['resumen'] ?></p>
     </div>
 
     <?php $style_img_info = 'width: 100%;height:308px;object-fit: cover; border-radius: 30px; border: 5px solid #2AA4BF;'?>
     <div class="info info-second">
-      <div class="container row" style="margin: auto;">
-        <div class="col-lg-4 col-md-6 col">
-          <a href="pantallas_led">
-            <img style="<?=$style_img_info?>" src="public/ventiladores_holograficos/retail.jpg" alt="enlaces">
-            <h2 class="subtitulo2">Retail</h2>
-          </a>
-        </div>
-          
-        <div class="col-lg-4 col-md-6 col">
-          <a href="efectos3d">
-            <img style="<?=$style_img_info?>" src="public/ventiladores_holograficos/negocio_tiendas.jpg" alt="enlaces">
-            <h2 class="subtitulo2">Negocios u tiendas</h2>
-          </a>
+      <div class="container row d-flex justify-content-center text-truncate" style="margin: auto;">
+        <?php if (!empty($producto['cat1'])): ?>
+          <div class="col-lg-4 col-md-6 col">
+            <a href="pantallas_led">
+              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat1']) ?>" alt="enlaces">
+              <h2 class="subtitulo2"><?= $producto['cat1'] ?></h2>
+            </a>
+          </div>
+        <?php endif; ?>
+
+        <?php if (!empty($producto['cat2'])): ?>
+          <div class="col-lg-4 col-md-6 col">
+            <a href="efectos3d">
+              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat2']) ?>" alt="enlaces">
+              <h2 class="subtitulo2"><?= $producto['cat2'] ?></h2>
+            </a>
+          </div>
+        <?php endif; ?>
+
+        <?php if (!empty($producto['cat3'])): ?>
+          <div class="col-lg-4 col-md-6 col">
+            <a href="letreros_neon_led">
+              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat3']) ?>" alt="enlaces">
+              <h2 class="subtitulo2"><?= $producto['cat3'] ?></h2>
+            </a>
+          </div>
+        <?php endif; ?>
+
+
         </div>
 
-        <div class="col-lg-4 col-md-6 col">
-          <a href="letreros_neon_led">
-            <img style="<?=$style_img_info?>" src="public/ventiladores_holograficos/evento_entretenimiento.webp" alt="enlaces">
-            <h2 class="subtitulo2">Eventos y entretenimiento</h2>
-          </a>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col">
-          <a href="cubos_led">
-            <img style="<?=$style_img_info?>" src="public/ventiladores_holograficos/empresa_oficina.jpg" alt="enlaces">
-            <h2 class="subtitulo2">Empresa u oficina</h2>
-          </a>
-        </div>
-            
-        <div class="col-lg-4 col-md-6 col">
-          <a href="relojes_digitales">
-            <img style="<?=$style_img_info?>" src="public/ventiladores_holograficos/interior_exterior.jpg" alt="enlaces">
-            <h2 class="subtitulo2">Interiores o exteriores</h2>
-          </a>
-        </div>
+        <div class="container row d-flex justify-content-center text-truncate" style="margin: auto;">
+        <?php if (!empty($producto['cat4'])): ?>
+          <div class="col-lg-4 col-md-6 col">
+            <a href="cubos_led">
+              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat4']) ?>" alt="enlaces">
+              <h2 class="subtitulo2"><?= $producto['cat4'] ?></h2>
+            </a>
+          </div>
+        <?php endif; ?>   
+      
+        <?php if (!empty($producto['cat5'])): ?>
+          <div class="col-lg-4 col-md-6 col">
+            <a href="relojes_digitales">
+              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat5']) ?>" alt="enlaces">
+              <h2 class="subtitulo2"><?= $producto['cat5'] ?></h2>
+            </a>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
 

@@ -45,7 +45,7 @@ class Ruteador
 				$controlador->{$url[1]}();
 							//Colocar la variable entre llaves
 							//para considerar el valor como variable
-			    //return;
+			    return;
 			} else {
 				//Mostrar VISTA del CONTROLADOR
 			$controlador->mostrarVista();

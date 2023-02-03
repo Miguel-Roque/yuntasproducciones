@@ -6,6 +6,7 @@ class Controlador
 	function __construct()
 	{
 		
+
 	}
 
 	function cargarModelo($nombre)

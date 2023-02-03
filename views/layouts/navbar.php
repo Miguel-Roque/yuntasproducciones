@@ -32,20 +32,20 @@
             <li><a href="productos">Productos<span class="icon-chevron-small-down icon2"></span></a>
 
                         <ul class="submenu9" style="z-index: 90;">
-                            <li><a href="pantallas_led"><img src="public/icons/1-h.png">Pantallas Led</a>
+                            <li><a href="producto?id=2"><img src="public/icons/1-h.png">Pantallas Led</a>
                                               
                             </li>
-                            <li><a href="ventiladores_holograficos"><img src="public/icons/2-h.png">Ventiladores<br>Holográficos</a>
+                            <li><a href="producto?id=3"><img src="public/icons/2-h.png">Ventiladores<br>Holográficos</a>
                                             
                             </li>
-                            <li><a href="letreros_neon_led"><img src="public/icons/3-h.png">Letreros Neon Led</a></li>
-                            <li><a href="cubos_led"><img src="public/icons/4-h.png">Cubos Led</a></li>
-                            <li><a href="relojes_digitales"><img src="public/icons/5-h.png">Relojes Digitales</a></li>
-                            <li><a href="letreros_led"><img src="public/icons/6-h.png">Letreros Led</a></li>
+                            <li><a href="producto?id=4"><img src="public/icons/3-h.png">Letreros Neon Led</a></li>
+                            <li><a href="producto?id=1"><img src="public/icons/4-h.png">Cubos Led</a></li>
+                            <li><a href="producto?id=5"><img src="public/icons/5-h.png">Relojes Digitales</a></li>
+                            <li><a href="producto?id=6"><img src="public/icons/6-h.png">Letreros Led</a></li>
                         </ul>    
 
             </li>
-            <li><a href="personaliza">Perzonaliza</a></li>
+            <li><a href="personaliza">Personaliza</a></li>
             <li><a href="blog">Blog</a></li>
             <li><a href="contactanos">Contáctanos</a></li>
         </ul>
@@ -53,6 +53,18 @@
     <div class="barra-blanca">
         
     </div>
+
+<!-- <script>
+            const submenus = document.querySelectorAll('.nav-principal ul li ul');
+
+            for (const submenu of submenus) {
+                submenu.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
+            }
+
+            
+</script> -->
 </body>
 </html>
 

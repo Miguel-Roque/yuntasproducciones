@@ -65,13 +65,14 @@ button[data-bs-target] {
 .nav2-img-1 {
     min-height: 70px;
     min-width: 70px;
-    background: url('http://localhost/YUNTAS_Producciones/public/icons/1.png') no-repeat;
+    background-color: white;
+    background: url('public/img/icons_categorias/001.png') no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 .nav2-img-1:hover {
-    background: url('http://localhost/YUNTAS_Producciones/public/icons/1-h.png') no-repeat;
+    background: url('public/img/icons_categorias/10.png') no-repeat;
     background-size: contain;
     background-position: center;
 }

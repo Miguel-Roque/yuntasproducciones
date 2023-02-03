@@ -54,7 +54,7 @@
     <nav class="nav_bar_categorias">
       <ul class="ul_categorias">
         <li class="li">
-          <a href="pantallas_led">
+          <a href="producto?id=2">
             <img width='60' height='50' src="public/img/icons_categorias/001.png" class="img_one" alt="">
             <img width='60' height='50' src="public/img/icons_categorias/10.png" class="img_two" alt="">
             <span>
@@ -63,7 +63,7 @@
           </a>
         </li>
         <li class="li">
-          <a href="ventiladores_holograficos">
+          <a href="producto?id=3">
             <img width='50' height='50' src="public/img/icons_categorias/002.png" class="img_one" alt="">
             <img width='50' height='50' src="public/img/icons_categorias/20.png" class="img_two" alt="">
             <span>
@@ -73,7 +73,7 @@
           </a>
         </li>
         <li class="li">
-          <a href="letreros_neon_led">
+          <a href="producto?id=4">
             <img width='50' height='50' src="public/img/icons_categorias/003.png" class="img_one" alt="">
             <img width='50' height='50' src="public/img/icons_categorias/30.png" class="img_two" alt="">
             <span>
@@ -83,7 +83,7 @@
           </a>
         </li>
         <li class="li">
-          <a href="cubos_led">
+          <a href="producto?id=1">
             <img width='50' height='50' src="public/img/icons_categorias/004.png" class="img_one" alt="">
             <img width='50' height='50' src="public/img/icons_categorias/40.png" class="img_two" alt="">
             <span>
@@ -92,7 +92,7 @@
           </a>
         </li>
         <li class="li">
-          <a href="relojes_digitales">
+          <a href="producto?id=5">
             <img width='100' height='50' src="public/img/icons_categorias/005.png" class="img_one" alt="">
             <img width='100' height='50' src="public/img/icons_categorias/50.png" class="img_two" alt="">
             <span>
@@ -101,7 +101,7 @@
           </a>
         </li>
         <li class="li">
-          <a href="letreros_led">
+          <a href="producto?id=6">
             <img width='50' height='50' src="public/img/icons_categorias/006.png" class="img_one" alt="">
             <img width='50' height='50' src="public/img/icons_categorias/60.png" class="img_two" alt="">
             <span>
@@ -126,7 +126,7 @@
     <div class="container-sm py-5">
       <div style="margin:0 auto;" class="row">
         <div class="col-lg-4 col-md-6">
-          <a href="letreros_neon_led" class="item_product position-relative d-block" style="margin-bottom: 20px;">
+          <a href="producto?id=4" class="item_product position-relative d-block" style="margin-bottom: 20px;">
             <img style="width: 100%;height:308px;padding: 4px;object-fit: cover; border-radius: 30px;" src="views/assets/letrerosneonled.webp" alt="enlaces">
             <span class="more_info position-absolute fs-3 fw-normal" style="background:#3399cca6; visibility:hidden; top:160px; left: calc(50% - 100px);color:#fff; padding: 6px 20px;border-radius: 10px; font-family: sans-serif; font-family: sans-serif">
               Más Infomación
@@ -139,7 +139,7 @@
           <!-- <h2 class="subtitulo2">LETREROS NEÓN LED</h2> -->
         </div>
         <div class="col-lg-4 col-md-6">
-          <a href="letreros_led" class="item_product position-relative d-block" style="margin-bottom: 20px;">
+          <a href="producto?id=6" class="item_product position-relative d-block" style="margin-bottom: 20px;">
             <img style="width: 100%;height:308px;padding: 4px;object-fit: cover; border-radius: 30px;" src="views/assets/letrerosled.webp" alt="enlaces">
             <span class="more_info position-absolute fs-3 fw-normal" style="background:#3399cca6; visibility:hidden; top:160px; left: calc(60% - 150px);color:#fff; padding: 10px 40px;border-radius: 10px; font-family: sans-serif;">
               Más Infomación
@@ -152,7 +152,7 @@
           <!-- <h2 class="subtitulo2">LETREROS LED</h2> -->
         </div>
         <div class="col-lg-4 col-md-6">
-          <a href="pantallas_led" class="item_product position-relative d-block" style="margin-bottom: 20px;">
+          <a href="producto?id=2" class="item_product position-relative d-block" style="margin-bottom: 20px;">
             <img style="width: 100%;height:308px;padding: 4px;object-fit: cover; border-radius: 30px;" src="views/assets/pantallasled.webp" alt="enlaces">
             <span class="more_info position-absolute fs-3 fw-normal" style="background:#3399cca6; visibility:hidden; top:160px; left: calc(60% - 150px);color:#fff; padding: 10px 40px;border-radius: 10px; font-family: sans-serif;">
               Más Infomación
@@ -165,7 +165,7 @@
           <!-- <h2 class="subtitulo2">PANTALLAS LED</h2> -->
         </div>
         <div class="col-lg-4 col-md-6">
-          <a href="cubos_led" class="item_product position-relative d-block" style="margin-bottom: 20px;">
+          <a href="producto?id=1" class="item_product position-relative d-block" style="margin-bottom: 20px;">
             <img style="width: 100%;height:308px;padding: 4px;object-fit: cover; border-radius: 30px;" src="views/assets/cubosled.webp" alt="enlaces">
             <span class="more_info position-absolute fs-3 fw-normal" style="background:#3399cca6; visibility:hidden; top:160px; left: calc(60% - 150px);color:#fff; padding: 10px 40px;border-radius: 10px; font-family: sans-serif;">
               Más Infomación
@@ -178,7 +178,7 @@
           <!-- <h2 class="subtitulo2">CUBOS LED</h2> -->
         </div>
         <div class="col-lg-4 col-md-6">
-          <a href="ventiladores_holograficos" class="item_product position-relative d-block" style="margin-bottom: 20px;">
+          <a href="producto?id=3" class="item_product position-relative d-block" style="margin-bottom: 20px;">
             <img style="width: 100%;height:308px;padding: 4px;object-fit: cover; border-radius: 30px;" src="views/assets/efectos3d.webp" alt="enlaces">
             <span class="more_info position-absolute fs-3 fw-normal" style="background:#3399cca6; visibility:hidden; top:160px; left: calc(60% - 150px);color:#fff; padding: 10px 40px;border-radius: 10px; font-family: sans-serif;">
               Más Infomación
@@ -191,7 +191,7 @@
           <!-- <h2 class="subtitulo2">EFECTOS 3D LED</h2> -->
         </div>
         <div class="col-lg-4 col-md-6">
-          <a href="relojes_digitales" class="item_product position-relative d-block" style="margin-bottom: 20px;">
+          <a href="producto?id=5" class="item_product position-relative d-block" style="margin-bottom: 20px;">
             <img style="width: 100%;height:308px;padding: 4px;object-fit: cover; border-radius: 30px;" src="views/assets/relojesdigitales.webp" alt="enlaces">
             <span class="more_info position-absolute fs-3 fw-normal" style="background:#3399cca6; visibility:hidden; top:160px; left: calc(60% - 150px);color:#fff; padding: 10px 40px;border-radius: 10px; font-family: sans-serif;">
               Más Infomación

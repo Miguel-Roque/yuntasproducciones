@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/css/csswasap.css" >
+    <link rel="stylesheet" href="public/css/navbar_categorias.css">
+
     <link rel="stylesheet" href="public/css/productos.css" > 
     <title>Productos</title>
     <link rel="icon" type="image/x-icon" href="public/nosotros/logowhite2.webp">
@@ -43,40 +45,68 @@
         </div>
       </div>
 
-      <div class="nav2">
-        <ul>
-          <li>
-            <a href="pantallas_led">
-              <div class="nav2-img nav2-img-1"><p>Pantallas led</p></div>              
-            </a>
-          </li>
-          <li>
-            <a href="ventiladores_holograficos">
-              <div class="nav2-img nav2-img-2"><p>Ventiladores <br> holográficos</p></div>              
-            </a>
-          </li>
-          <li>
-            <a href="letreros_neon_led">
-              <div class="nav2-img nav2-img-3"><p>Letreros neón led</p></div>              
-            </a>
-          </li>
-          <li>
-            <a href="cubos_led">
-              <div class="nav2-img nav2-img-4"><p>Cubos led</p></div>              
-            </a>
-          </li>
-          <li>
-            <a href="relojes_digitales">
-              <div class="nav2-img nav2-img-5"><p>Relojes digitales</p></div>              
-            </a>
-          </li>
-          <li>
-            <a href="letreros_led">
-              <div class="nav2-img nav2-img-6"><p>Letreros led</p></div>              
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="container_navbar_categorias container">
+    <nav class="nav_bar_categorias">
+      <ul class="ul_categorias">
+        <li class="li">
+          <a href="producto?id=2">
+            <img width='60' height='50' src="public/img/icons_categorias/001.png" class="img_one" alt="">
+            <img width='60' height='50' src="public/img/icons_categorias/10.png" class="img_two" alt="">
+            <span>
+              Pantallas Led
+            </span>
+          </a>
+        </li>
+        <li class="li">
+          <a href="producto?id=3">
+            <img width='50' height='50' src="public/img/icons_categorias/002.png" class="img_one" alt="">
+            <img width='50' height='50' src="public/img/icons_categorias/20.png" class="img_two" alt="">
+            <span>
+              Ventiladores <br>
+              Holográficos
+            </span>
+          </a>
+        </li>
+        <li class="li">
+          <a href="producto?id=4">
+            <img width='50' height='50' src="public/img/icons_categorias/003.png" class="img_one" alt="">
+            <img width='50' height='50' src="public/img/icons_categorias/30.png" class="img_two" alt="">
+            <span>
+              Letreros Neón <br>
+              Led
+            </span>
+          </a>
+        </li>
+        <li class="li">
+          <a href="producto?id=1">
+            <img width='50' height='50' src="public/img/icons_categorias/004.png" class="img_one" alt="">
+            <img width='50' height='50' src="public/img/icons_categorias/40.png" class="img_two" alt="">
+            <span>
+              Cubos Led
+            </span>
+          </a>
+        </li>
+        <li class="li">
+          <a href="producto?id=5">
+            <img width='100' height='50' src="public/img/icons_categorias/005.png" class="img_one" alt="">
+            <img width='100' height='50' src="public/img/icons_categorias/50.png" class="img_two" alt="">
+            <span>
+              Relojes Digitales
+            </span>
+          </a>
+        </li>
+        <li class="li">
+          <a href="producto?id=6">
+            <img width='50' height='50' src="public/img/icons_categorias/006.png" class="img_one" alt="">
+            <img width='50' height='50' src="public/img/icons_categorias/60.png" class="img_two" alt="">
+            <span>
+              Letreros Led
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
       
       <div class="banner">
         <img src="public/pantallas_led/compra-y-venta-de-pantallas-publicitarias-led.jpg" alt="">
@@ -90,42 +120,42 @@
     <div class="container-sm my-5">
       <div style="margin:0 auto;" class="row ">
         <div class="col-lg-4 col-md-6">
-          <a href="pantallas_led">
+          <a href="producto?id=2">
             <img style="width: 100%;height:308px;object-fit: cover; border-radius: 30px;" src="views/assets/pantallasled.webp" alt="enlaces">
             <h2 class="subtitulo2">Pantallas led</h2>
           </a>
         </div>
         
         <div class="col-lg-4 col-md-6">
-          <a href="ventiladores_holograficos">
+          <a href="producto?id=3">
             <img style="width: 100%;height:308px;object-fit: cover; border-radius: 30px;" src="views/assets/efectos3d.webp" alt="enlaces">
             <h2 class="subtitulo2">Ventiladores Holográficos</h2>
           </a>
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <a href="letreros_neon_led">
+          <a href="producto?id=4">
             <img style="width: 100%;height:308px;object-fit: cover; border-radius: 30px;" src="views/assets/letrerosneonled.webp" alt="enlaces">
             <h2 class="subtitulo2">Letreros neón led</h2>
           </a>
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <a href="cubos_led">
+          <a href="producto?id=1">
             <img style="width: 100%;height:308px;object-fit: cover; border-radius: 30px;" src="views/assets/cubosled.webp" alt="enlaces">
             <h2 class="subtitulo2">Cubos led</h2>
           </a>
         </div>
         
         <div class="col-lg-4 col-md-6">
-          <a href="relojes_digitales">
+          <a href="producto?id=5">
             <img style="width: 100%;height:308px;object-fit: cover; border-radius: 30px;" src="views/assets/relojesdigitales.webp" alt="enlaces">
             <h2 class="subtitulo2">Relojes digitales</h2>
           </a>
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <a href="letreros_led">
+          <a href="producto?id=6">
             <img style="width: 100%;height:308px;object-fit: cover; border-radius: 30px;" src="views/assets/letrerosled.webp" alt="enlaces">
             <h2 class="subtitulo2">Letreros led</h2>
           </a>
