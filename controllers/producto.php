@@ -16,8 +16,8 @@ class Producto extends Controlador {
 
 	{
 		
-        $id = $_GET['id'];
-        $producto = $this->model->getProducto($id);
+        $slug = $_GET['slug'];
+        $producto = $this->model->getProductoBySlug($slug);
 		$nombre = "productos/producto";
 		//Codigo para mostrar la Vista
 		//Generar el nombre de la vista: views/consulta/index.php
