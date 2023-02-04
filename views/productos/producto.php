@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="public/css/csswasap.css" >
     <link rel="stylesheet" href="public/css/productos.css" >
 
-    <title><?= $producto['name'] ?></title>
+    <title><?= $producto['slug'] ?></title>
     <link rel="icon" type="image/x-icon" href="public/nosotros/logowhite2.webp">
     <?php require_once("views/layouts/enlaces.php") ?>
   </head>
@@ -53,55 +53,47 @@
 
     <?php $style_img_info = 'width: 100%;height:308px;object-fit: cover; border-radius: 30px; border: 5px solid #2AA4BF;'?>
     <div class="info info-second">
-      <div class="container row d-flex justify-content-center text-truncate" style="margin: auto;">
-        <?php if (!empty($producto['cat1'])): ?>
-          <div class="col-lg-4 col-md-6 col">
-            <a href="pantallas_led">
-              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat1']) ?>" alt="enlaces">
-              <h2 class="subtitulo2"><?= $producto['cat1'] ?></h2>
-            </a>
-          </div>
-        <?php endif; ?>
+          <?php
+      $categorias = [
+        ['cat' => $producto['cat1'], 'img' => $producto['img_cat1'], 'slug' => 'pantallas_led'],
+        ['cat' => $producto['cat2'], 'img' => $producto['img_cat2'], 'slug' => 'efectos3d'],
+        ['cat' => $producto['cat3'], 'img' => $producto['img_cat3'], 'slug' => 'letreros_neon_led'],
+       
+      ];
+      $categorias2 = [
+        ['cat' => $producto['cat4'], 'img' => $producto['img_cat4'], 'slug' => 'cubos_led'],
+        ['cat' => $producto['cat5'], 'img' => $producto['img_cat5'], 'slug' => 'relojes_digitales']
+      ];
+      ?>
 
-        <?php if (!empty($producto['cat2'])): ?>
-          <div class="col-lg-4 col-md-6 col">
-            <a href="efectos3d">
-              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat2']) ?>" alt="enlaces">
-              <h2 class="subtitulo2"><?= $producto['cat2'] ?></h2>
-            </a>
-          </div>
-        <?php endif; ?>
+      <div class="container row " style="margin:auto;">
+        
+        <?php foreach ($categorias as $categoria): ?>
+          <?php if (!empty($categoria['cat'])): ?>
+            <div class="col-lg-4 col-md-5 col ">
+              <a href="<?= $categoria['slug'] ?>">
+                <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($categoria['img']) ?>" alt="enlaces">
+                <h2 class="subtitulo2 text-truncate "><?= $categoria['cat'] ?></h2>
+              </a>
+            </div>
+            
+          <?php endif; ?>
+        <?php endforeach; ?>
+      </div>
 
-        <?php if (!empty($producto['cat3'])): ?>
-          <div class="col-lg-4 col-md-6 col">
-            <a href="letreros_neon_led">
-              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat3']) ?>" alt="enlaces">
-              <h2 class="subtitulo2"><?= $producto['cat3'] ?></h2>
-            </a>
-          </div>
-        <?php endif; ?>
-
-
-        </div>
-
-        <div class="container row d-flex justify-content-center text-truncate" style="margin: auto;">
-        <?php if (!empty($producto['cat4'])): ?>
-          <div class="col-lg-4 col-md-6 col">
-            <a href="cubos_led">
-              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat4']) ?>" alt="enlaces">
-              <h2 class="subtitulo2"><?= $producto['cat4'] ?></h2>
-            </a>
-          </div>
-        <?php endif; ?>   
-      
-        <?php if (!empty($producto['cat5'])): ?>
-          <div class="col-lg-4 col-md-6 col">
-            <a href="relojes_digitales">
-              <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($producto['img_cat5']) ?>" alt="enlaces">
-              <h2 class="subtitulo2"><?= $producto['cat5'] ?></h2>
-            </a>
-          </div>
-        <?php endif; ?>
+      <div class="container row d-flex justify-content-center" style="margin:auto;">
+        
+        <?php foreach ($categorias2 as $categoria2): ?>
+          <?php if (!empty($categoria2['cat'])): ?>
+            <div class="col-lg-4 col-md-5 col ">
+              <a href="<?= $categoria2['slug'] ?>">
+                <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($categoria2['img']) ?>" alt="enlaces">
+                <h2 class="subtitulo2 text-truncate "><?= $categoria2['cat'] ?></h2>
+              </a>
+            </div>
+            
+          <?php endif; ?>
+        <?php endforeach; ?>
       </div>
     </div>
 

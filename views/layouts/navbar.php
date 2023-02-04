@@ -32,16 +32,16 @@
             <li><a href="productos">Productos<span class="icon-chevron-small-down icon2"></span></a>
 
                         <ul class="submenu9" style="z-index: 90;">
-                            <li><a href="producto?id=2"><img src="public/icons/1-h.png">Pantallas Led</a>
+                            <li><a href="producto?slug=Pantalla Led"><img src="public/icons/1-h.png">Pantallas Led</a>
                                               
                             </li>
-                            <li><a href="producto?id=3"><img src="public/icons/2-h.png">Ventiladores<br>Holográficos</a>
+                            <li><a href="producto?slug=Ventilador holográfico"><img src="public/icons/2-h.png">Ventiladores<br>Holográficos</a>
                                             
                             </li>
-                            <li><a href="producto?id=4"><img src="public/icons/3-h.png">Letreros Neon Led</a></li>
-                            <li><a href="producto?id=1"><img src="public/icons/4-h.png">Cubos Led</a></li>
-                            <li><a href="producto?id=5"><img src="public/icons/5-h.png">Relojes Digitales</a></li>
-                            <li><a href="producto?id=6"><img src="public/icons/6-h.png">Letreros Led</a></li>
+                            <li><a href="producto?slug=Letreros neón led"><img src="public/icons/3-h.png">Letreros Neon Led</a></li>
+                            <li><a href="producto?slug=Cubo Led"><img src="public/icons/4-h.png">Cubos Led</a></li>
+                            <li><a href="producto?slug=Relojes digitales"><img src="public/icons/5-h.png">Relojes Digitales</a></li>
+                            <li><a href="producto?slug=Letreros led"><img src="public/icons/6-h.png">Letreros Led</a></li>
                         </ul>    
 
             </li>
