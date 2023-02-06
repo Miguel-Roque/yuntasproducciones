@@ -71,7 +71,7 @@
         <?php foreach ($categorias as $categoria): ?>
           <?php if (!empty($categoria['cat'])): ?>
             <div class="col-lg-4 col-md-5 col ">
-              <a href="producto?slug=Letreros led<?= $categoria['cat'] ?>">
+              <a href="<?= $categoria['slug'] ?>">
                 <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($categoria['img']) ?>" alt="enlaces">
                 <h2 class="subtitulo2 text-truncate "><?= $categoria['cat'] ?></h2>
               </a>
