@@ -1,14 +1,13 @@
 <?php
-require_once("models/ModeloCategoria.php");
-
-class Producto extends Controlador {
+require_once("models/ModeloSubCategoria.php");
+class SubProductos extends Controlador {
 
 
 
     public function __construct() {
 		
 		parent::__construct();
-        $this->model = new ModeloCategoria();
+        $this->model = new ModeloSubCategoria();
         //Invocar al metodo MostrarVista
 		//$this->mostrarVista("main/index");
         
@@ -16,12 +15,11 @@ class Producto extends Controlador {
     function mostrarVista()
 
 	{
-        $slug = $_GET['slug'];
-
 		
-        $producto = $this->model->getProductoBySlug($slug);
-
-		$nombre = "productos/producto";
+        $id = $_GET['id'];
+		
+        $subproductos = $this->model->getSubProducto($id);
+		$nombre = "productos/subproductos";
 		//Codigo para mostrar la Vista
 		//Generar el nombre de la vista: views/consulta/index.php
 		$fileName = "views/" . $nombre . ".php";
@@ -32,8 +30,6 @@ class Producto extends Controlador {
 		
 
 	}
-
-	
 	
 	
    

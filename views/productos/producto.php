@@ -55,46 +55,34 @@
     <div class="info info-second">
           <?php
       $categorias = [
-        ['cat' => $producto['cat1'], 'img' => $producto['img_cat1'], 'slug' => 'pantallas_led'],
+        ['cat' => $producto['cat1'], 'img' => $producto['img_cat1'], 'slug' => 'Pantalla Led'],
         ['cat' => $producto['cat2'], 'img' => $producto['img_cat2'], 'slug' => 'efectos3d'],
         ['cat' => $producto['cat3'], 'img' => $producto['img_cat3'], 'slug' => 'letreros_neon_led'],
-       
-      ];
-      $categorias2 = [
         ['cat' => $producto['cat4'], 'img' => $producto['img_cat4'], 'slug' => 'cubos_led'],
         ['cat' => $producto['cat5'], 'img' => $producto['img_cat5'], 'slug' => 'relojes_digitales']
       ];
       ?>
 
-      <div class="container row " style="margin:auto;">
+      <div class="container row d-flex justify-content-center" style="margin:auto;">
         
-        <?php foreach ($categorias as $categoria): ?>
+        <?php 
+        $count =1;
+        foreach ($categorias as $categoria): ?>
           <?php if (!empty($categoria['cat'])): ?>
             <div class="col-lg-4 col-md-5 col ">
-              <a href="producto?slug=Letreros led<?= $categoria['cat'] ?>">
+              <a href="subproductos?id=<?php echo $count; ?>">
                 <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($categoria['img']) ?>" alt="enlaces">
                 <h2 class="subtitulo2 text-truncate "><?= $categoria['cat'] ?></h2>
               </a>
             </div>
             
-          <?php endif; ?>
+          <?php 
+           $count++;
+          endif; ?>
         <?php endforeach; ?>
       </div>
 
-      <div class="container row d-flex justify-content-center" style="margin:auto;">
-        
-        <?php foreach ($categorias2 as $categoria2): ?>
-          <?php if (!empty($categoria2['cat'])): ?>
-            <div class="col-lg-4 col-md-5 col ">
-              <a href="<?= $categoria2['slug'] ?>">
-                <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($categoria2['img']) ?>" alt="enlaces">
-                <h2 class="subtitulo2 text-truncate "><?= $categoria2['cat'] ?></h2>
-              </a>
-            </div>
-            
-          <?php endif; ?>
-        <?php endforeach; ?>
-      </div>
+      
     </div>
 
     <?php require_once("views/productos/formulario/index.php") ?>
