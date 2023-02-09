@@ -55,11 +55,11 @@
     <div class="info info-second">
           <?php
       $categorias = [
-        ['cat' => $producto['cat1'], 'img' => $producto['img_cat1'], 'slug' => 'Pantalla Led'],
-        ['cat' => $producto['cat2'], 'img' => $producto['img_cat2'], 'slug' => 'efectos3d'],
-        ['cat' => $producto['cat3'], 'img' => $producto['img_cat3'], 'slug' => 'letreros_neon_led'],
-        ['cat' => $producto['cat4'], 'img' => $producto['img_cat4'], 'slug' => 'cubos_led'],
-        ['cat' => $producto['cat5'], 'img' => $producto['img_cat5'], 'slug' => 'relojes_digitales']
+        ['cat' => $producto['cat1'], 'img' => $producto['img_cat1']],
+        ['cat' => $producto['cat2'], 'img' => $producto['img_cat2']],
+        ['cat' => $producto['cat3'], 'img' => $producto['img_cat3']],
+        ['cat' => $producto['cat4'], 'img' => $producto['img_cat4']],
+        ['cat' => $producto['cat5'], 'img' => $producto['img_cat5']]
       ];
       ?>
 
@@ -67,8 +67,25 @@
         
         <?php 
         $count =1;
+        if ($producto['slug'] == "Pantallas Led") {
+          $count = 1;
+        } elseif ($producto['slug'] == "Cubo Led") {
+          $count = 5;
+        } elseif ($producto['slug'] == "Ventilador holográfico") {
+          $count = 8;
+        }
+        elseif ($producto['slug'] == "Letreros neón led") {
+          $count = 13;
+        }
+        elseif ($producto['slug'] == "Relojes digitales") {
+          $count = 17;
+        }
+        elseif ($producto['slug'] == "Letreros led") {
+          $count = 20;
+        }
         foreach ($categorias as $categoria): ?>
           <?php if (!empty($categoria['cat'])): ?>
+            
             <div class="col-lg-4 col-md-5 col ">
               <a href="subproductos?id=<?php echo $count; ?>">
                 <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($categoria['img']) ?>" alt="enlaces">
@@ -77,7 +94,9 @@
             </div>
             
           <?php 
+
            $count++;
+         
           endif; ?>
         <?php endforeach; ?>
       </div>

@@ -21,7 +21,7 @@
         <img src="public/img/logowhite.webp" alt="" class="logo">
         <ul>
             <li><a href="blog">Administrar Blog</a></li>
-            <li><a href="#">Administrar Reclamos</a></li>
+            <li><a href="reclamos">Administrar Reclamos</a></li>
             <li><a href="contactanos">Administrar Contactanos</a></li>
             <li><a href="#">Administrar Consultas</a></li>
         </ul>
