@@ -7,7 +7,11 @@
 	$correo=$_POST['correo'];
     $cel=$_POST['cel'];
 	$msg=$_POST['msg'];
-    $imagen=addslashes(file_get_contents($_FILES['imagen']['tmp_name'])) === '' ? null : addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
+    if ($_FILES['imagen']['tmp_name'] !== '') {
+        $imagen = addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
+    } else {
+        $imagen = null;
+    }
     $fecha=date('Y-m-d');
 
    
