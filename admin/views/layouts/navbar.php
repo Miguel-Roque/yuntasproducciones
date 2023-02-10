@@ -23,7 +23,7 @@
             <li><a href="blog">Administrar Blog</a></li>
             <li><a href="reclamos">Administrar Reclamos</a></li>
             <li><a href="contactanos">Administrar Contactanos</a></li>
-            <li><a href="#">Administrar Consultas</a></li>
+            <li><a href="consultas">Administrar Consultas</a></li>
         </ul>
         <a href="cerrarSesion" class="enlace">Cerrar Sesión</a>
     </nav>
