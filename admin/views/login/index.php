@@ -12,7 +12,7 @@
 <body>
   <img src="public/img/Ylogo.png" alt="">
   <div class="login">
-    <h1>Login</h1>
+    <h1 style="padding: 0.5em; position: relative; top: 20px">Login</h1>
     <form method="post" action="ingresar">
       <input type="text" name="u" placeholder="Usuario" required="required" />
       <input type="password" name="p" placeholder="Contraseña" required="required" />
