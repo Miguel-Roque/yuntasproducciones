@@ -75,7 +75,7 @@
             <td>
               <form action="atendidoConsultas" method="POST">
                 <input type="hidden" name="id" value="<?php echo $data ['id']?>">
-                <button type="submit" class="btn btn-primary">Resulta</button>
+                <button type="submit" class="btn btn-primary" onclick="return confirm('¿Está seguro de que desea enviar el formulario?');">Resuelta</button>
               </form>
             </td>
           </tr>
