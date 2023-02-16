@@ -22,7 +22,7 @@
             <li><a class="active" href="main">Inicio</a></li>
             <li><a href="">Nosotros<span class="icon-chevron-small-down icon2"></span></a>
 
-                         <ul class="submenu9" style="z-index: 90;">
+                         <ul class="submenu" style="z-index: 90;">
                             <li><a href="nosotros"><img src="public/icons/7.png"> Nuesta misión, visión </br> y valores</a></li>
                             <li><a href="como_llegar"><img src="public/icons/8.png"> Tienda, horarios y </br> zona de cobertura</a></li>
                             <li><a href="historia"><img src="public/icons/9.png"> Historia de Yuntas</a></li>
@@ -31,7 +31,7 @@
             </li>
             <li><a href="productos">Productos<span class="icon-chevron-small-down icon2"></span></a>
 
-                        <ul class="submenu9" style="z-index: 90;">
+                        <ul class="submenu" style="z-index: 90;">
                             <li><a href="producto?slug=Pantalla Led"><img src="public/icons/1-h.png">Pantallas Led</a>
                                               
                             </li>
@@ -66,5 +66,6 @@
             
 </script> -->
 </body>
+    
 </html>
 
