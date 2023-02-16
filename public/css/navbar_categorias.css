@@ -11,6 +11,7 @@
     display: flex;
    
 }*/
+
 .container_navbar_categorias .nav_bar_categorias .ul_categorias{
     position: relative;
     display: inline-flex;
@@ -20,12 +21,13 @@
     flex-wrap: wrap;
     justify-content: center;
     bottom: 10px;
+    height: fit-content;
 }
 .container_navbar_categorias li{
     position: relative;
     list-style: none;
-    padding: 0px 20px;
-    bottom: 70px;
+    padding: 0px 10px;
+    bottom: 50px;
 }
 .container_navbar_categorias a{
     text-decoration: none;
@@ -119,6 +121,7 @@
     scroll-margin-top: 80px;
     position: relative;
 }
+
 .container_banner .carousel_home_body .view_carousel{
     width: auto;
     height: 100%;
@@ -159,6 +162,7 @@
     color: white;
     background: #fbfbfb;
 }
+
 .container_banner .points_carousel .active{
     background: #39c;
 }
@@ -172,14 +176,28 @@
     margin-top: 3rem;
 }
 
+
 /**
     media querys
 */
+
 @media (min-width: 900px) {
     .container_banner .banner{
         margin-bottom: 5rem;
     }
 }
+
+
+@media (max-width: 900px) {    
+    .container_navbar_categorias nav {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+     
+}
+
+
 @media (max-width: 768px) {
     .container_productos .titulos2 span {
         font-size: 3rem;
@@ -202,12 +220,17 @@
         margin-bottom: 3rem;
         height: 40vh;
     }
-    .container_navbar_categorias{
-        padding: 0px;
-        margin: 0px;
-    }
-    .container_navbar_categorias .nav_bar_categorias .ul_categorias{
+    
+    .container_navbar_categorias {
         padding: 1rem 0rem;
+        margin: 0px;
+        visibility: hidden;
+    }
+    
+    .container_navbar_categorias nav {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
     }
     
 }
@@ -221,6 +244,13 @@
     .container_banner .banner{
         height: 30vh;
     }
+
+    .container_navbar_categorias nav {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    
 }
 @media only screen and (max-device-width : 768px) and (orientation : portrait) {
     .container_banner .carousel_home_body{

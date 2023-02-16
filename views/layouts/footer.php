@@ -89,7 +89,7 @@
 
 <style type="text/css">
       
-  .*, *:before, *:after {
+   *:before, *:after {
     box-sizing: border-box;
   }
   .contraste:hover {

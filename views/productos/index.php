@@ -46,7 +46,7 @@
       </div>
 
       <div class="container_navbar_categorias container">
-    <nav class="nav_bar_categorias">
+    <nav >
       <ul class="ul_categorias">
         <li class="li">
           <a href="producto?slug=Pantalla Led">
