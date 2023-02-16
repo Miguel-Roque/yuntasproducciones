@@ -21,6 +21,7 @@
   <?php require_once("views/layouts/enlaces.php") ?>
 </head>
 
+<!-- <body class="" style="background: #000000;">-->
 <body class="" style="background: #000000;">
   <?php require_once("views/layouts/navbar.php"); ?>
 
@@ -48,10 +49,10 @@
     </div>
   </div>
 
-  <!-- sidebar -->
-
+ <!-- sidebar -->
+ 
   <div class="container_navbar_categorias container">
-    <nav class="nav_bar_categorias">
+    <nav>
       <ul class="ul_categorias">
         <li class="li">
           <a href="producto?slug=Pantalla Led">
