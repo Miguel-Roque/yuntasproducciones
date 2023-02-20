@@ -5,21 +5,37 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    z-index: 900;
+    z-index: 999;
+    display: flex;
+    width: 50px;
+  
+    height: 50px;
+ 
+  border-radius: 50%;
+  text-align: center;
+  animation: vibrate 2s ease-in-out infinite;
   }
+  @keyframes vibrate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  
+}
+  
 </style>
 
-<a href="https://wa.me/912849782?text=Hi%20there!" target="_blank">
-  <div class="float-button">
-    Chat on WhatsApp
-  </div>
-</a>
+
+    <a href="https://wa.me/912849782?text=Hi%20there!" target="_blank" class="float-button">
+    <img src="public/img/whattsap.png">
+      
+      
+    </a>
 
 
     <footer class="footer">
@@ -92,6 +108,10 @@
    *:before, *:after {
     box-sizing: border-box;
   }
+ 
+  
+    
+
   .contraste:hover {
   filter: contrast(600%);
   transition:all .5s ease-in-out;
@@ -114,6 +134,7 @@
     width: 38px;
     height: 38px;
     padding: 2px;
+   
   }
   .nav__ul img{
     width: 80px;

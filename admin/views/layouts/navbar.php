@@ -29,9 +29,9 @@
            
             <ul class="nav-menu">
             <li><a href="blog">Administrar Blog</a></li>
-            <li><a href="#">Administrar Reclamos</a></li>
+            <li><a href="reclamos">Administrar Reclamos</a></li>
             <li><a href="contactanos">Administrar Contactanos</a></li>
-            <li><a href="#">Administrar Consultas</a></li>
+            <li><a href="consultas">Administrar Consultas</a></li>
             </ul>
             
         </div>
@@ -49,7 +49,7 @@
             <li><a href="blog">Administrar Blog</a></li>
             <li><a href="#">Administrar Reclamos</a></li>
             <li><a href="contactanos">Administrar Contactanos</a></li>
-            <li><a href="#">Administrar Consultas</a></li>
+            <li><a href="consultas">Administrar Consultas</a></li>
             </ul>
         </div>
         </div>

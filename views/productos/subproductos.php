@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="public/css/csswasap.css" >
     <link rel="stylesheet" href="public/css/productos.css" >
 
-    <title><?= $producto['slug'] ?></title>
+    <title><?=$subproductos['slug']?></title>
     <link rel="icon" type="image/x-icon" href="public/nosotros/logowhite2.webp">
     <?php require_once("views/layouts/enlaces.php") ?>
   </head>
   <body>
-    <?php	require_once("views/layouts/navbar.php");?>
+    <?php require_once("views/layouts/navbar.php");?>
 
     <div class="info info-first">
       <div class="slider">
@@ -39,7 +39,6 @@
             <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          
           </div>
         </div>
       </div>
@@ -47,62 +46,55 @@
 
     <div class="info-2 info-2-first">
       <div class="titulos2-container">  
-        <h1 class="titulos2"><?= $producto['titulo'] ?></h1>
+        <h1 class="titulos2">Informacion</h1>
       </div>
-      <p><?= $producto['resumen'] ?></p>
+      <p><?= $subproductos['resumen'] ?></p>
     </div>
 
     <?php $style_img_info = 'width: 100%;height:308px;object-fit: cover; border-radius: 30px; border: 5px solid #2AA4BF;'?>
     <div class="info info-second">
           <?php
       $categorias = [
-        ['cat' => $producto['cat1'], 'img' => $producto['img_cat1']],
-        ['cat' => $producto['cat2'], 'img' => $producto['img_cat2']],
-        ['cat' => $producto['cat3'], 'img' => $producto['img_cat3']],
-        ['cat' => $producto['cat4'], 'img' => $producto['img_cat4']],
-        ['cat' => $producto['cat5'], 'img' => $producto['img_cat5']]
+        ['cat' => $subproductos['subcat1'], 'img' => $subproductos['img_subcat1']],
+        ['cat' => $subproductos['subcat2'], 'img' => $subproductos['img_subcat2']],
+        ['cat' => $subproductos['subcat3'], 'img' => $subproductos['img_subcat3']],
+       
+      ];
+      $categorias2 = [
+        ['cat' => $subproductos['subcat4'], 'img' => $subproductos['img_subcat4']],
+        ['cat' => $subproductos['subcat5'], 'img' => $subproductos['img_subcat5']]
       ];
       ?>
 
-      <div class="container row d-flex justify-content-center" style="margin:auto;">
+      <div class="container row " style="margin:auto;">
         
-        <?php 
-        $count =1;
-        if ($producto['slug'] == "Pantallas Led") {
-          $count = 1;
-        } elseif ($producto['slug'] == "Cubo Led") {
-          $count = 5;
-        } elseif ($producto['slug'] == "Ventilador holográfico") {
-          $count = 8;
-        }
-        elseif ($producto['slug'] == "Letreros neón led") {
-          $count = 13;
-        }
-        elseif ($producto['slug'] == "Relojes digitales") {
-          $count = 17;
-        }
-        elseif ($producto['slug'] == "Letreros led") {
-          $count = 20;
-        }
-        foreach ($categorias as $categoria): ?>
+        <?php foreach ($categorias as $categoria): ?>
           <?php if (!empty($categoria['cat'])): ?>
-            
             <div class="col-lg-4 col-md-5 col ">
-              <a href="subproductos?id=<?php echo $count; ?>">
+              <a href="">
                 <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($categoria['img']) ?>" alt="enlaces">
                 <h2 class="subtitulo2 text-truncate "><?= $categoria['cat'] ?></h2>
               </a>
             </div>
             
-          <?php 
-
-           $count++;
-         
-          endif; ?>
+          <?php endif; ?>
         <?php endforeach; ?>
       </div>
 
-      
+      <div class="container row d-flex justify-content-center" style="margin:auto;">
+        
+        <?php foreach ($categorias2 as $categoria2): ?>
+          <?php if (!empty($categoria2['cat'])): ?>
+            <div class="col-lg-4 col-md-5 col ">
+              <a href="<?= $categoria2['slug'] ?>">
+                <img style="<?=$style_img_info?>" src="data:image/jpg;base64,<?php echo base64_encode($categoria2['img']) ?>" alt="enlaces">
+                <h2 class="subtitulo2 text-truncate "><?= $categoria2['cat'] ?></h2>
+              </a>
+            </div>
+            
+          <?php endif; ?>
+        <?php endforeach; ?>
+      </div>
     </div>
 
     <?php require_once("views/productos/formulario/index.php") ?>

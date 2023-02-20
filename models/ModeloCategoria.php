@@ -19,7 +19,7 @@ class ModeloCategoria extends ModeloBase {
   }
 
   // public function getProducto($id) {
-  //   $query = $this->db->prepare('SELECT * FROM productos WHERE name = ?');
+  //   $query = $this->db->prepare('SELECT * FROM categorias WHERE name = ?');
   //   $query->execute([$id]);
   //   $resultSet = $query->get_result();
   //   $data = $resultSet->fetch_assoc();

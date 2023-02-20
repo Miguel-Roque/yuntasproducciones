@@ -7,39 +7,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="public/css/consultas.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="public/css/contactanos.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
 </head>
 <body>
   <?php require_once("views/layouts/navbar.php");?>
-  <main>
-    <header style="display: flex;">
-      <h1>Listado de Reclamos</h1>
+  <main class="">
+    <header>
+      <h1 class="text-center">Listado de Consultas</h1>
     </header>
+<div class="table-responsive px-5 ">
 
-    <table class="table">
+    <table class="table table-striped table-bordered">
       <thead>
         <tr>
-            <th scope="col">NUMERO DE RECLAMO</th>
-            <th scope="col">FECHA DEL INCIDENTE </th>
-            <th scope="col">NOMBRES</th>
-            <th scope="col">APELLIDOS</th>
-            <th scope="col">DIRECCION DEL DOMICILIO</th>
+            <th scope="col">#</th>
+            <th scope="col">FECHA DE CONSULTA</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">APELLIDO</th>
+            <th scope="col">CORREO</th>
             <th scope="col">TELEFONO</th>
-            <th scope="col">CORREO ELECTRONICO</th>
-            <th scope="col">PETICION</th>
-            <th scope="col">ACCION</th>
-            <th></th>
+            <th scope="col">MENSAJE</th>
+            <th scope="col">IMAGEN</th>
+            <th scope="col">ACCIONES</th>
         </tr>
       </thead>
       <tbody>
         <?php 
         include "core/conexion.php";
         //Paginador
-        $sql_registe = mysqli_query($conn,"SELECT COUNT(*) as total_registro FROM reclamo WHERE estado = 1");
+        $sql_registe = mysqli_query($conn,"SELECT COUNT(*) as total_registro FROM personaliza ");
         $result_register = mysqli_fetch_array($sql_registe);
         $total_registro = $result_register['total_registro'];
 
@@ -55,9 +52,8 @@
         $desde = ($pagina-1) * $por_pagina;
         $total_paginas = ceil($total_registro / $por_pagina);
 
-        $query = mysqli_query($conn,"SELECT * FROM reclamo 
-                                     WHERE estado = 1
-                                     ORDER BY idReclamo 
+        $query = mysqli_query($conn,"SELECT * FROM personaliza 
+                                     ORDER BY id 
                                      ASC LIMIT $desde,$por_pagina");
 
         mysqli_close($conn);
@@ -68,43 +64,29 @@
           while ($data = mysqli_fetch_array($query)) {
         ?>
           <tr>
-
-            <td scope="row"><?php echo $data['idReclamo']?></td>
-            <td><?php echo $data['fecIncidente']?></td>
-            <td><?php echo $data['nombres']?></td>
-            <td><?php echo $data['apellidos']?></td>
-            <td><?php echo $data['direccion']?></td>
-            <td><?php echo $data['telefono']?></td>
+            <td scope="row"><?php echo $data['id']?></td>
+            <td><?php echo $data['fechaPersonaliza']?></td>
+            <td><?php echo $data['nom']?></td>
+            <td><?php echo $data['ape']?></td>
             <td><?php echo $data['correo']?></td>
-            <td><?php echo $data['peticion']?></td>
-            
+            <td><?php echo $data['cel']?></td>
+            <td><textarea class="msg" disabled><?php echo $data['msg']?></textarea></td>
+            <td><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($data['imagen'])?>" alt=""></td>
             <td>
-              <form action="atendidoReclamos" method="POST">
-                <input type="hidden" name="idReclamo" value="<?php echo $data ['idReclamo']?>">
-                <button type="submit" class="btn btn-primary">Atendido</button>
+              <form action="atendidoConsultas" method="POST">
+                <input type="hidden" name="id" value="<?php echo $data ['id']?>">
+                <button type="submit" class="btn btn-primary" onclick="return confirm('¿Está seguro de que desea enviar el formulario?');">Resuelta</button>
               </form>
             </td>
-            
-            <td style="text-align: center"><a href="javascript:void(0)" onclick="mostarDetalles('<?php echo $data['idReclamo']; ?>')"><i class="glyphicon glyphicon-search"></i></a></td>                          
           </tr>
         <?php 
           } 
         }?>
       </tbody>
     </table>
-    <div id="divModal"></div>
-        <script>
-            function mostarDetalles(idReclamo) {
-                var ruta = 'mimodal.php';
-                $.get(ruta, function ($data) {
-                    $('#divModal').html($data);
-                    $('#myModal').modal('show');
-                });
-            }
-        </script>
+  </div>
     <div class="paginador">
 			<ul>
-
 			<?php 
 				if($pagina != 1)
 				{
