@@ -24,7 +24,7 @@
 <!-- <body class="" style="background: #000000;">-->
 <body class="" style="background: #000000;">
   <?php require_once("views/layouts/navbar.php"); ?>
-
+  <
   <div class="container container_banner">
     <div class="carousel_home_body">
       <div class="view_carousel d-flex flex-row ">

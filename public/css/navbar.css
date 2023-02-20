@@ -8,6 +8,30 @@
     font-family: 'Nunito', sans-serif;
 }
 
+header{
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 0px;
+    z-index: 10;
+   
+}
+
+header.abajo header{ 
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    transition: 0.7s;
+    z-index: 10;
+    padding-top: 0px;
+
+}
+
+header.abajo .barra-blanca{
+    visibility: hidden;
+}
+
+
 .mobile {
     display: none;
 }
@@ -26,13 +50,19 @@ nav{
     height: 80px;
     width: 100%;
     
+    
+}
+
+.abajo{
+   margin-top: 0%;
 }
 
 .barra-blanca {
     display: inline-block;
-    height: 40px;
+    height: 140px;
     width: 100%;
     background: white;
+    top: 100px;
 }
 
 .enlace{
@@ -43,6 +73,7 @@ nav{
 }
 
 .logo{
+    margin-top: 0px;
     height: 150px;
     width: 150px;
 
@@ -65,7 +96,7 @@ nav ul li > a{
     bottom: -20px;
     font-size: 20px;
     font-weight: bold;
-    padding: 30px 40px;
+    padding: 10px 40px;
     padding-right: 0;
     border-radius: 3px;
     text-decoration: none;
@@ -174,9 +205,9 @@ section{
     height: calc(100vh - 80px);
 }
 
-header nav ul li:hover .submenu9{
-    display: block
-}
+
+
+
 
 @media (max-width: 952px){
     .enlace{
