@@ -13,7 +13,8 @@
 
 <body>
     <header>
-        <nav class="nav-principal" id="nav">
+
+        <nav class="nav-principal" style="top: 0px;">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
@@ -58,44 +59,32 @@
                 <li><a href="contactanos">Contáctanos</a></li>
             </ul>
         </nav>
-        </header>
-        <div class="barra-blanca">
+    </header>
+    <div class="barra-blanca">
 
-        </div>
-   
+    </div>
 
 
-    <script type="text/javascript">
-    window.addEventListener("scroll", function() {
-        var header = document.querySelector("header");
-        header.classList.toggle("abajo", window.scrollY > 0);
-    })
-  
+    <script>
     let ubicacionPrincipal = window.pageYOffset;
-    let $nav = document.querySelector("nav");
+    let $nav = document.querySelector(".nav-principal");
 
-   
+
     window.addEventListener("scroll", function() {
         let desplazamientoActual = window.pageYOffset;
 
-        
+
         if (ubicacionPrincipal >= desplazamientoActual) {
-            
+
             $nav.style.top = "0px";
-            console.log('Ubicacion Principal')
-            console.log(ubicacionPrincipal)
-            console.log('desplazamiento')
-            console.log(desplazamientoActual)
+       
         } else {
-            
+
             $nav.style.top = "-80px";
-            console.log('Ubicacion Principal')
-            console.log(ubicacionPrincipal)
-            console.log('desplazamiento')
-            console.log(desplazamientoActual)
+       
         }
 
-       
+
         ubicacionPrincipal = desplazamientoActual;
     });
     </script>
