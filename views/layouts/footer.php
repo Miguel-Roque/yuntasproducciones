@@ -108,6 +108,10 @@
   .*, *:before, *:after {
     box-sizing: border-box;
   }
+ 
+  
+    
+
   .contraste:hover {
   filter: contrast(600%);
   transition:all .5s ease-in-out;
@@ -130,6 +134,7 @@
     width: 38px;
     height: 38px;
     padding: 2px;
+   
   }
   .nav__ul img{
     width: 80px;
