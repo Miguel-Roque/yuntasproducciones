@@ -11,9 +11,11 @@ class ModeloSubCategoria extends ModeloBase {
 
 
   public function getSubProducto($id) {
-    $query = $this->db->prepare('SELECT * FROM subproductos WHERE id = ?');
-    $query->execute([$id]);
-    $resultSet = $query->get_result();
+    $sql = "SELECT * FROM subproductos WHERE id = ?";
+    $stmt = $this->db->prepare($sql);
+    $stmt->bind_param('s', $id);
+    $stmt->execute();
+    $resultSet = $stmt->get_result();
     $data = $resultSet->fetch_assoc();
     return $data;
   } 

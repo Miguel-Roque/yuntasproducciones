@@ -9,27 +9,13 @@ class ModeloCategoria extends ModeloBase {
 		parent::__construct();
 	}
 
-  public function getProductos() {
-    $query = $this->db->prepare('SELECT * FROM productos');
-    $query->execute();
-    $resultSet = $query->get_result();
-    $data = $resultSet->fetch_all(MYSQLI_ASSOC);
-    return $data;
-  
-  }
-
-  // public function getProducto($id) {
-  //   $query = $this->db->prepare('SELECT * FROM categorias WHERE name = ?');
-  //   $query->execute([$id]);
-  //   $resultSet = $query->get_result();
-  //   $data = $resultSet->fetch_assoc();
-  //   return $data;
-  // } 
+ 
   public function getProductoBySlug($slug) {
     // consulta para obtener un producto por su slug
     $sql = "SELECT * FROM productos WHERE slug = ?";
     $stmt = $this->db->prepare($sql);
-    $stmt->execute([$slug]);
+    $stmt->bind_param('s', $slug);
+    $stmt->execute();
     $resultSet = $stmt->get_result();
     $data = $resultSet->fetch_assoc();
     return $data;
