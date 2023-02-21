@@ -80,22 +80,12 @@
 <script>
   var myModalEl = document.getElementById('myModal');
   $(document).ready(function() {
-  var carousel = $('#carouselExampleIntervals');
+  
 
-  // Iniciar el slider
-  carousel.carousel();
-
-  // Obtener la duración de cada slide
-  var interval = carousel.data('bs-interval');
-
-  // Calcular la duración total del slider
-  var totalDuration = interval * (carousel.find('.carousel-item').length - 1);
-
-  // Esperar a que finalice el tiempo del slider
   setTimeout(function() {
     // Mostrar el modal
     $('#myModal').modal('show');
-  }, totalDuration);
+  }, 5000);
 });
 </script>
 
