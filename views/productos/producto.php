@@ -39,11 +39,65 @@
             <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          
           </div>
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Formulario de contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  var myModalEl = document.getElementById('myModal');
+  $(document).ready(function() {
+  var carousel = $('#carouselExampleIntervals');
+
+  // Iniciar el slider
+  carousel.carousel();
+
+  // Obtener la duración de cada slide
+  var interval = carousel.data('bs-interval');
+
+  // Calcular la duración total del slider
+  var totalDuration = interval * (carousel.find('.carousel-item').length - 1);
+
+  // Esperar a que finalice el tiempo del slider
+  setTimeout(function() {
+    // Mostrar el modal
+    $('#myModal').modal('show');
+  }, totalDuration);
+});
+</script>
 
     <div class="info-2 info-2-first">
       <div class="titulos2-container">  
@@ -109,5 +163,6 @@
 
     <?php require_once("views/layouts/footer.php") ?>
     <?php require_once("views/layouts/enlaces.php") ?>
+
   </body>
 </html>
