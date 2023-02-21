@@ -26,11 +26,11 @@
     <div class="redes">
       <a href="#">Sigue a Yuntas Producciones </a>
       <div style="margin-bottom: 5px;">
-        <a href="https://www.facebook.com/YuntasProducciones" class="contraste"><img src="public/img/fb.png"><span></span></a>
+        <a href="https://www.facebook.com/YuntasProducciones" class="contraste" ><img src="public/img/Face.png"><span></span></a>
         <a href="https://www.instagram.com/yuntasproducciones/" class="contraste"><img src="public/img/inst.png"><span></span></a>
         <a href="#" class="contraste"><img src="public/img/whattsap.png"><span></span></a>
-        <a href="https://www.youtube.com/@yuntasproducciones5082" class="contraste"><img src="public/img/youtube.png"><span></span></a>
-        <a href="https://www.tiktok.com/@yuntasproducciones" class="contraste"><img src="public/img/tiktok.png"><span></span></a>
+        <a href="https://www.youtube.com/@yuntasproducciones5082" class="contraste"><img src="public/img/ytb.png"><span></span></a>
+        <a href="https://www.tiktok.com/@yuntasproducciones" class="contraste"><img src="public/img/TikTok1.png"><span></span></a>
       </div>
     </div>
    <ul class="footer__nav">
@@ -89,12 +89,13 @@
 
 <style type="text/css">
       
-  .*, *:before, *:after {
+  *, *:before, *:after {
     box-sizing: border-box;
   }
+  
   .contraste:hover {
-  filter: contrast(600%);
-  transition:all .5s ease-in-out;
+  filter: brightness(0.5);
+  transition:all 0.5s ease-in-out;
   }
   .redes {
     padding: 5rem 0.1;
