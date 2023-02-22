@@ -60,9 +60,7 @@
             </ul>
         </nav>
     </header>
-    <div class="barra-blanca">
-
-    </div>
+ 
 
 
     <script>
@@ -83,7 +81,6 @@
             $nav.style.top = "-80px";
        
         }
-
 
         ubicacionPrincipal = desplazamientoActual;
     });

@@ -28,14 +28,23 @@ a:hover > .icon2 {
     color: #2AA4BF;
 }
 
-nav{
+.nav-principal{
+     /* 30% Opacidad */
     transition: 0.6s;
     position: relative;
-    background: rgb(160, 47, 47);
     height: 80px;
-    width: 100%;      
+    width: 100%;  
+    background: rgba(27, 27, 27, 0.438);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );   
 }
 
+nav{  
+    position: relative;
+    background: black;
+    height: 60px;
+    width: 100%;  
+}
 
 
 .barra-blanca {
