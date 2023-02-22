@@ -24,7 +24,7 @@
 <!-- <body class="" style="background: #000000;">-->
 <body class="" style="background: #000000;">
   <?php require_once("views/layouts/navbar.php"); ?>
-
+<!--
   <div class="container container_banner">
     <div class="carousel_home_body">
       <div class="view_carousel d-flex flex-row ">
@@ -48,9 +48,36 @@
         </span>
     </div>
   </div>
+<<<<<<< Updated upstream
 
- <!-- sidebar -->
+ sidebar -->
  
+
+<div class="container container_banner">
+      <div class="slider">
+        <div id="carouselExampleIntervals" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="public/img/fondo.webp" class="d-block w-100" alt="slide1">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="public/img/fondo1.webp" class="d-block w-100" alt="slide2">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="public/img/fondo2.webp" class="d-block w-100" alt="slide3">
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" style="height:15px; width: 15px" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" style="height:15px; width: 15px" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" style="height:15px; width: 15px" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- sidebar -->
+  <br><br>
+  <br><br>
   <div class="container_navbar_categorias container">
     <nav>
       <ul class="ul_categorias">
@@ -209,46 +236,6 @@
   </div>
 
   <?php require_once("views/layouts/footer.php") ?>
-  <script>
-    window.addEventListener('load', () => {
-
-      var images = document.querySelectorAll(".carousel_home_body .view_carousel .slide img");
-      var images_array =[...images] ;
-      var images_src = images_array.map((element) => element.src);
-      var slide_current = document.querySelector(".carousel_home_body .view_carousel .slide.active");
-      var currentElementId = Number(document.querySelector('.slide.active').dataset.id);
-      var buttons = document.querySelectorAll('.points_carousel span.buttons_carousel');
-      
-
-      buttons.forEach((item,index)=>{
-        item.addEventListener('click',(e)=>{
-          resetBackground(buttons);
-          images[0].src = images_src[index];
-          images[0].style.transition = "all 1s";
-          buttons[index].style.background = "#39c";
-        });
-      });
-
-
-      function resetBackground(elements){
-        elements.forEach((item)=>{
-          item.style.background = "#fbfbfb";
-        });
-      }
-
-      function changePosition(){
-        const num_ran = Math.floor(Math.random() * (images_src.length));
-        images[0].src = images_src[num_ran];
-        images[0].style.transition = "all 1s";
-        resetBackground(buttons);
-        buttons[num_ran].style.background = "#39c";
-      }
-        
-      setInterval(()=>{
-        changePosition();
-      },4000);
-    
-    });
-  </script>
+  
 </body>
 </html>
