@@ -184,9 +184,10 @@
 @media (min-width: 900px) {
     .container_banner .banner{
         margin-bottom: 5rem;
+        
     }
-}
 
+}
 
 @media (max-width: 900px) {    
     .container_navbar_categorias nav {
@@ -197,6 +198,18 @@
      
 }
 
+@media (max-width: 900px) {
+    .container_navbar_categorias li{
+        padding: 10px 0px;
+        display: flex;
+    }
+
+    .nav_bar_categorias{
+        visibility: hidden;
+    }
+
+    
+}
 
 @media (max-width: 768px) {
     .container_productos .titulos2 span {

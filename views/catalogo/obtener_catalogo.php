@@ -24,9 +24,7 @@
         .underline{
             text-decoration:underline;
         }
-        .text-light{
-             
-        }
+
        .img-d{
         width: 200%;
         height: 350px;
