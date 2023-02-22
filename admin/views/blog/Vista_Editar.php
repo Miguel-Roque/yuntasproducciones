@@ -45,6 +45,7 @@
 
             <button type="submit" class="btn btn-primary">Editar</button>
             <button type="submit" class="btn btn-danger">Cancelar</button>
+      
         </form>
     </div>
 

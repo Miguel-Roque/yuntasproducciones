@@ -115,6 +115,7 @@
     width: 38px;
     height: 38px;
     padding: 2px;
+    filter: contrast(70%)
   }
   .nav__ul img{
     width: 80px;
