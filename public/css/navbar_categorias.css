@@ -12,6 +12,10 @@
    
 }*/
 
+#iconos1{
+    background: #fbfbfb;
+}
+
 .container_navbar_categorias .nav_bar_categorias .ul_categorias{
     position: relative;
     display: inline-flex;
