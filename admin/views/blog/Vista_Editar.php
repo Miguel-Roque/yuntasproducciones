@@ -44,6 +44,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Editar</button>
+            <button type="button" class="btn btn-danger" onclick="window.history.back()">cancelar</button>
         </form>
     </div>
 
