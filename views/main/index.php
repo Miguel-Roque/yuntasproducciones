@@ -52,31 +52,8 @@
   </div>
 
 
-<div class="container container_banner">
-      <div class="slider">
-        <div id="carouselExampleIntervals" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="public/img/fondo.webp" class="d-block w-100" alt="slide1">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="public/img/fondo1.webp" class="d-block w-100" alt="slide2">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="public/img/fondo2.webp" class="d-block w-100" alt="slide3">
-            </div>
-          </div>
-          <div class="carousel-indicators">
-            <button type="button" style="height:15px; width: 15px" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" style="height:15px; width: 15px" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" style="height:15px; width: 15px" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-        </div>
-      </div>
-    </div>
   <!-- sidebar -->
-  <br><br>
-  <br><br>
+  
   <div class="container_navbar_categorias container">
     <nav>
       <ul class="ul_categorias">
