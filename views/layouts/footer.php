@@ -93,9 +93,17 @@
     box-sizing: border-box;
   }
   
+  .contraste{
+    filter: brightness(0.5);
+    transition:all 0.5s ease-in-out;
+  }
   .contraste:hover {
-  filter: brightness(0.5);
-  transition:all 0.5s ease-in-out;
+    filter: none;
+    transform: scale(1.1);
+    
+  }
+  .constraste:not(:hover){
+    filter: brightness(0.5);
   }
   .redes {
     padding: 5rem 0.1;
