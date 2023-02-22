@@ -50,10 +50,7 @@
         </span>
     </div>
   </div>
-<<<<<<< Updated upstream
 
- sidebar -->
- 
 
 <div class="container container_banner">
       <div class="slider">
