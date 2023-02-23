@@ -116,6 +116,9 @@
   .contraste:hover {
     filter: none;
     transform: scale(1.1);
+    width: 30px;
+    display: inline-block; 
+    vertical-align: middle;
     
   }
   .constraste:not(:hover){
@@ -145,6 +148,8 @@
     width: 80px;
     height: 50px;
     padding: 5px;
+    display: inline-block; 
+    vertical-align: middle; 
   }
   .footer__addr img{
       width: 280px;
