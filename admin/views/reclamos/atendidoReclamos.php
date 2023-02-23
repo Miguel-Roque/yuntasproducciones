@@ -2,16 +2,14 @@
 session_start();
 
 include "core/conexion.php";
+$idReclamo = $_POST['idReclamo'];
 
-$id = mysqli_real_escape_string($conn, $_POST['idReclamo']);
+$sql = "DELETE FROM reclamo WHERE idReclamo = $idReclamo";
 
-$sql = "DELETE FROM reclamo WHERE idReclamo = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $id);
-$resultado = $stmt->execute();
 
-if ($resultado) {
-    header("Location: consultas");
-}else {
-    echo "No se insertaron los datos";
-}
+if ($conn->query($sql) === TRUE) {
+     header("Location: reclamos");
+  } else {
+    echo "Error al eliminar el reclamo: " . $conn->error;
+  }
+  

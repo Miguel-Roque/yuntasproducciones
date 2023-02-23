@@ -1,5 +1,5 @@
 <?php
-class AtendidosReclamos extends Controlador
+class AtendidoReclamos extends Controlador
 {
 	
 	function __construct()
@@ -10,7 +10,7 @@ class AtendidosReclamos extends Controlador
 	function mostrarVista()
 	{
 		$nombre = "reclamos";
-		$fileName = "views/" . $nombre . "/atendidosReclamos.php";
+		$fileName = "views/" . $nombre . "/atendidoReclamos.php";
 		require_once("$fileName");
 
 	}

@@ -19,8 +19,8 @@
     <header style="display: flex;">
       <h1>Listado de Reclamos</h1>
     </header>
-
-    <table class="table">
+<div class="table-responsive px-5 ">
+    <table class="table table-striped table-bordered">
       <thead>
         <tr>
             <th scope="col">NUMERO DE RECLAMO</th>
@@ -57,7 +57,6 @@
         $total_paginas = ceil($total_registro / $por_pagina);
 
         $query = mysqli_query($conn,"SELECT * FROM reclamo 
-                                    
                                      ORDER BY idReclamo 
                                      ASC LIMIT $desde,$por_pagina");
 
@@ -93,6 +92,7 @@
         }?>
       </tbody>
     </table>
+  </div>
     <div id="divModal"></div>
         <script>
             function mostarDetalles(idReclamo) {
