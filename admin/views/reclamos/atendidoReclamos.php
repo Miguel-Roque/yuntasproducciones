@@ -3,14 +3,16 @@ session_start();
 
 include "core/conexion.php";
 
-$Id = $_POST['idReclamo'];
+$id = mysqli_real_escape_string($conn, $_POST['id']);
 
-$sql = "UPDATE reclamos SET estado = 0 WHERE codigo = $Id";
 
-$resultado = $conn->query($sql);
+$sql = "DELETE FROM reclamo WHERE idReclamo = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $id);
+$resultado = $stmt->execute();
 
 if ($resultado) {
-    header("Location: reclamos");
+    header("Location: consultas");
 }else {
     echo "No se insertaron los datos";
 }
