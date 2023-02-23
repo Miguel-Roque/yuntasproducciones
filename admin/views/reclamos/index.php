@@ -39,7 +39,8 @@
         <?php 
         include "core/conexion.php";
         //Paginador
-        $sql_registe = mysqli_query($conn,"SELECT COUNT(*) as total_registro FROM reclamo WHERE estado = 1");
+        $sql_registe = mysqli_query($conn,"SELECT COUNT(*) as total_registro FROM reclamo
+          ");
         $result_register = mysqli_fetch_array($sql_registe);
         $total_registro = $result_register['total_registro'];
 
@@ -56,7 +57,7 @@
         $total_paginas = ceil($total_registro / $por_pagina);
 
         $query = mysqli_query($conn,"SELECT * FROM reclamo 
-                                     WHERE estado = 1
+                                    
                                      ORDER BY idReclamo 
                                      ASC LIMIT $desde,$por_pagina");
 
@@ -81,7 +82,7 @@
             <td>
               <form action="atendidoReclamos" method="POST">
                 <input type="hidden" name="idReclamo" value="<?php echo $data ['idReclamo']?>">
-                <button type="submit" class="btn btn-primary">Atendido</button>
+                <button type="submit" class="btn btn-primary" onclick="return confirm('¿Está seguro de que desea enviar el formulario?');">Atendido</button>
               </form>
             </td>
             
@@ -104,7 +105,7 @@
         </script>
     <div class="paginador">
 			<ul>
-
+ 
 			<?php 
 				if($pagina != 1)
 				{

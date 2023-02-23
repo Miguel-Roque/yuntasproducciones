@@ -10,8 +10,8 @@
                     <thead>
                         <tr>
                             <th>idReclamo</th>
-                            <th>Numbre Usuario</th>
-                            <th>Cuenta.</th>
+                            <th>Nombre Usuario</th>
+                            <th>Cuenta</th>
                             <th>Estado</th>
                         </tr>
                     </thead>
