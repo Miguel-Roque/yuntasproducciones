@@ -1,4 +1,4 @@
-
+  
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,7 +10,8 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
   <meta name="keywords" content="Yuntas Producciones, luces led,letrero led, yuntas,pantallas led,calidad de imagen,efectos 3d led,Neon Led,luces navideñas,iluminación led, yuntas producciones,barras luces led, ventilador holografico, holograma 3d, publicidad,marketing, luces led de colores,luces led navidad">
-
+  
+  <link rel="stylesheet" href="public/css/personaliza.css">
   <link rel="stylesheet" href="public/css/home.css">
   <link rel="stylesheet" href="public/css/csswasap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -24,29 +25,27 @@
 <body class="" style="background: #000000;">
   <?php require_once("views/layouts/navbar.php"); ?>
 
-  <div class="container container_banner">
-    <div class="carousel_home_body">
-      <div class="view_carousel d-flex flex-row ">
-        <div class="slide active" data-id="1" id="item_img_1">
-          <img src="public/img/fondo.webp" alt="">
-        </div>
-        <div class="slide" data-id="2" id="item_img_2">
-          <img src="public/img/fondo1.webp" alt="">
-        </div>
-        <div class="slide" data-id="3" id="item_img_3">
-          <img src="public/img/fondo2.webp" alt="">
+    <div class="container container_banner">
+        <div id="carouselExampleIntervals" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="public/Personaliza/pantalla_led_01.webp" class="d-block w-100" alt="slide0">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="public/Personaliza/pantalla_led_02.webp" class="d-block w-100" alt="slide1">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="public/Personaliza/pantalla_led_03.jpg" class="d-block w-100" alt="slide2">
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2"></button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="points_carousel d-flex justify-content-center py-4" style="gap:10%">
-        <span class="buttons_carousel rounded-circle active" style="height:15px; width: 15px;">
-        </span>
-        <span class="buttons_carousel rounded-circle" style="height:15px; width: 15px;">
-        </span>
-        <span class="buttons_carousel rounded-circle" style="height:15px; width: 15px;">
-        </span>
-    </div>
-  </div>
+      </div>
 
   <!-- sidebar -->
 
@@ -208,46 +207,17 @@
   </div>
 
   <?php require_once("views/layouts/footer.php") ?>
-  <script>
-    window.addEventListener('load', () => {
+  <script src="public/js/productos/main.js"></script>
 
-      var images = document.querySelectorAll(".carousel_home_body .view_carousel .slide img");
-      var images_array =[...images] ;
-      var images_src = images_array.map((element) => element.src);
-      var slide_current = document.querySelector(".carousel_home_body .view_carousel .slide.active");
-      var currentElementId = Number(document.querySelector('.slide.active').dataset.id);
-      var buttons = document.querySelectorAll('.points_carousel span.buttons_carousel');
-      
-
-      buttons.forEach((item,index)=>{
-        item.addEventListener('click',(e)=>{
-          resetBackground(buttons);
-          images[0].src = images_src[index];
-          images[0].style.transition = "all 1s";
-          buttons[index].style.background = "#39c";
-        });
-      });
-
-
-      function resetBackground(elements){
-        elements.forEach((item)=>{
-          item.style.background = "#fbfbfb";
-        });
-      }
-
-      function changePosition(){
-        const num_ran = Math.floor(Math.random() * (images_src.length));
-        images[0].src = images_src[num_ran];
-        images[0].style.transition = "all 1s";
-        resetBackground(buttons);
-        buttons[num_ran].style.background = "#39c";
-      }
-        
-      setInterval(()=>{
-        changePosition();
-      },4000);
-    
-    });
-  </script>
+  <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 18) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
 </body>
 </html>
