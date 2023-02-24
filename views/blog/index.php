@@ -13,8 +13,8 @@
 <body>
 <?php	require_once("views/layouts/navbar.php");?>
 
-<div class="encabezado">
-  <h1>Blog</h1>
+<div style="padding: 0.5em; position: relative; top: 10px" class="encabezado">
+  <h1 >Blog</h1>
   <p>­­Te invitamos a que nos conozcas un poco más, y no solo eso, a aprender cosas nuevas sobre la empresa y los diferentes productos que te brindamos, porque tu también eres parte de nuestra familia. Cada momento queremos compartirlo contigo también... ¡Bienvenido!­</p>
 </div>
 

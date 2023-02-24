@@ -16,7 +16,7 @@ session_start();
 <body>
 <?php	require_once("views/layouts/navbar.php");?>
 <div class="container">
-  <h1>Contáctanos</h1>
+  <h1 style="padding: 0.5em; position: relative; top: 25px">Contáctanos</h1>
   <p>Completa el siguiente formulario para contactarse con nosotros,<br> donde te responderemos lo más rápido y breve posible. Muchas Gracias!.</p>
   <div class="container-form">
     <img src="#" alt="#">
