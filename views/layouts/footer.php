@@ -13,14 +13,14 @@
  
   border-radius: 50%;
   text-align: center;
-  animation: vibrate 2s ease-in-out infinite;
+  animation: vibrate 3s ease-in-out infinite;
   }
   @keyframes vibrate {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-100px);
+    transform: translateY(-40px);
   }
   100% {
     transform: translateY(0);
