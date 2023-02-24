@@ -28,29 +28,33 @@
  <br>
  <br>
   <div class="container container_banner">
-    <div class="carousel_home_body">
-      <div class="view_carousel d-flex flex-row ">
-        <div class="slide active" data-id="1" id="item_img_1">
-          <img src="public/img/fondo.webp" alt="">
+  <div class="carousel slide carousel_home_body" id="carouselExampleIntervals" data-bs-ride="carousel">
+      <div class="carousel-inner view_carousel d-flex flex-row ">
+        <div class="carousel-item active slide active" data-bs-interval="3000" data-id="1" id="item_img_1">
+          <img src="public/img/fondo.webp" alt="slide0">
         </div>
-        <div class="slide" data-id="2" id="item_img_2">
-          <img src="public/img/fondo1.webp" alt="">
+        <div class="carousel-item slide" data-id="2" data-bs-interval="3000" id="item_img_2">
+          <img src="public/img/fondo1.webp" alt="slide1">
         </div>
-        <div class="slide" data-id="3" id="item_img_3">
-          <img src="public/img/fondo2.webp" alt="">
+        <div class="carousel-item slide" data-id="3" data-bs-interval="3000" id="item_img_3">
+          <img src="public/img/fondo2.webp" alt="slide2">
         </div>
       </div>
+      <div class="carousel-indicators py-5">
+        <button type="button" class="buttons_carousel active" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
+        <img src="public/img/fondo.webp" class="d-block"  alt="slide0" width="80px" height="60px">
+        </button>
+        <button type="button" class="buttons_carousel" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1">
+        <img src="public/img/fondo1.webp" class="d-block" alt="slide1" width="80px" height="60px" >
+        </button>
+        <button type="button" class="buttons_carousel" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2">
+        <img src="public/img/fondo2.webp" class="d-block" alt="slide2" width="80px" height="60px" >
+        </button>
     </div>
-    <div class="points_carousel d-flex justify-content-center py-4" style="gap:10%">
-        <span class="buttons_carousel rounded-circle active" style="height:15px; width: 15px;">
-        </span>
-        <span class="buttons_carousel rounded-circle" style="height:15px; width: 15px;">
-        </span>
-        <span class="buttons_carousel rounded-circle" style="height:15px; width: 15px;">
-        </span>
     </div>
+    
   </div>
-
+<br>
 
   <!-- sidebar -->
   
