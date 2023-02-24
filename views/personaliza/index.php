@@ -33,9 +33,9 @@
             </div>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"><img src="public/Personaliza/pantalla_led_01.webp" class="d-block" height="60px" width="80px" alt="slide0"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1"><img src="public/Personaliza/pantalla_led_02.webp" class="d-block"  height="60px" width="80px" alt="slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2"><img src="public/Personaliza/pantalla_led_03.jpg" class="d-block" height="60px" width="80px" alt="slide2"></button>
           </div>
         </div>
       </div>
@@ -59,9 +59,9 @@
             </div>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals1" data-bs-slide-to="1" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals1" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"><img src="public/Personaliza/tiras_led_01.jpg" class="d-block" height="60px" width="80px" alt="slide0"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals1" data-bs-slide-to="1" aria-label="Slide 1"><img src="public/Personaliza/tiras_led_02.jpeg" class="d-block" height="60px" width="80px" alt="slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals1" data-bs-slide-to="2" aria-label="Slide 2"><img src="public/Personaliza/tiras_led_03.jpg" class="d-block" height="60px" width="80px" alt="slide2"></button>
           </div>
         </div>
       </div>
@@ -85,9 +85,9 @@
             </div>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals2" data-bs-slide-to="1" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals2" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"><img src="public/Personaliza/letreros_led_01.jpg" class="d-block" height="60px" width="80px" alt="slide0"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals2" data-bs-slide-to="1" aria-label="Slide 1"><img src="public/Personaliza/letreros_led_02.webp" class="d-block" height="60px" width="80px" alt="slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals2" data-bs-slide-to="2" aria-label="Slide 2"><img src="public/Personaliza/letreros_led_03.jpg" class="d-block" height="60px" width="80px" alt="slide2"></button>
           </div>
         </div>
       </div>
@@ -108,9 +108,9 @@
             </div>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals3" data-bs-slide-to="1" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals3" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"><img src="public/Personaliza/cubos_led_01.webp" class="d-block" height="60px" width="80px" alt="slide0"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals3" data-bs-slide-to="1" aria-label="Slide 1"><img src="public/Personaliza/cubos_led_02.png" class="d-block" height="60px" width="80px" alt="slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals3" data-bs-slide-to="2" aria-label="Slide 2"><img src="public/Personaliza/cubos_led_03.jpeg" class="d-block" height="60px" width="80px" alt="slide2"></button>
           </div>
         </div>
       </div>
@@ -131,9 +131,9 @@
             </div>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals4" data-bs-slide-to="1" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals4" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"><img src="public/Personaliza/reloj_01.jpg" class="d-block" height="60px" width="80px" alt="slide0"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals4" data-bs-slide-to="1" aria-label="Slide 1"><img src="public/Personaliza/reloj_02.jpg" class="d-block" height="60px" width="80px" alt="slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals4" data-bs-slide-to="2" aria-label="Slide 2"><img src="public/Personaliza/reloj_03.jpg" class="d-block" height="60px" width="80px" alt="slide2"></button>
           </div>
         </div>
       </div>
@@ -154,9 +154,9 @@
             </div>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals5" data-bs-slide-to="1" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals5" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"><img src="public/Personaliza/led_01.jpg" class="d-block" height="60px" width="80px" alt="slide0"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals5" data-bs-slide-to="1" aria-label="Slide 1"><img src="public/Personaliza/led_02.jpg" class="d-block" height="60px" width="80px" alt="slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals5" data-bs-slide-to="2" aria-label="Slide 2"><img src="public/Personaliza/led_03.webp" class="d-block" height="60px" width="80px" alt="slide2"></button>
           </div>
         </div>
       </div>

@@ -27,12 +27,8 @@
 
 button[data-bs-target] {
     position: relative;
-    top: 50px;
-    width: 18px !important;
-    height: 18px !important;
     margin-right: 60px !important;
     margin-left: 60px !important;
-    border-radius: 50%;
 }
 
 .nav2 {
@@ -355,7 +351,6 @@ h2.subtitulo2 {
 
     .slider img {
         border-radius: 0;
-        width: 450px;
     }
 
     .carousel-indicators button { 
@@ -391,7 +386,7 @@ h2.subtitulo2 {
 
 @media (max-width: 426px) {
     .slider img {
-        height: 450px;
+        height: 300px;
     }
 
     .titulos2 {

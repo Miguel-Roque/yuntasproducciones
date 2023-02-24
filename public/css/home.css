@@ -20,13 +20,21 @@
 }
 button[data-bs-target] {
     position: relative;
-    top: 50px;
-    width: 18px !important;
-    height: 18px !important;
     margin-right: 60px !important;
     margin-left: 60px !important;
-    border-radius: 50%;
-    display: block;
+    padding-bottom: 50px;
+    z-index: 1;
+}
+
+@media (max-width: 650px){
+    .carousel-indicators button { 
+        display: none;
+    }
+}
+
+.img-carrusel{
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .slider {
@@ -93,6 +101,7 @@ color: black;
     .titulos2{
         font-size: 2.5rem;
     }
+    
 }
 @media (min-width: 1024px) { 
     .titulos{

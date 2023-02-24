@@ -33,13 +33,9 @@
 
 
 button[data-bs-target] {
-    position: relative;
-    top: 50px;
-    width: 18px !important;
-    height: 18px !important;
+    position: relative ;
     margin-right: 60px !important;
     margin-left: 60px !important;
-    border-radius: 50%;
 }
 
 .titulos2-container {

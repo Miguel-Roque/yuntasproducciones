@@ -20,7 +20,6 @@
   </head>
   <body>
     <?php require_once("views/layouts/navbar.php");?>
-
     <div class="info info-first">
       <div class="slider">
         <div id="carouselExampleIntervals" class="carousel slide" data-bs-ride="carousel">
@@ -36,9 +35,9 @@
             </div>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="public/ventiladores_holograficos/ventilador_holografico_1.jpg" class="d-block" height="60px" width="80px" alt="slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 2"><img src="public/ventiladores_holograficos/ventilador_holografico_2.jpg" class="d-block" height="60px" width="80px" alt="slide2"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 3"><img src="public/ventiladores_holograficos/ventilador_holografico_3.jpg" class="d-block" height="60px" width="80px" alt="slide3"></button>
           </div>
         </div>
       </div>
