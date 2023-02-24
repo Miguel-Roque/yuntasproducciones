@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="public/css/contactanos.css">
+  <link rel="stylesheet" href="public/css/consultas.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
@@ -16,8 +16,8 @@
 <body>
   <?php require_once("views/layouts/navbar.php");?>
   <main>
-    <header style="display: flex;">
-      <h1>Listado de Reclamos</h1>
+    <header>
+      <h1 class="text-center" >Listado de Reclamos</h1>
     </header>
 <div class="table-responsive px-5 ">
     <table class="table table-striped table-bordered">
@@ -32,7 +32,7 @@
             <th scope="col">CORREO ELECTRONICO</th>
             <th scope="col">PETICION</th>
             <th scope="col">ACCION</th>
-            <th></th>
+            <th scope="col">DETALLES</th>
         </tr>
       </thead>
       <tbody>
@@ -78,14 +78,14 @@
             <td><?php echo $data['correo']?></td>
             <td><?php echo $data['peticion']?></td>
             
-            <td>
+            <td style="text-align: center">
               <form action="atendidoReclamos" method="POST">
                 <input type="hidden" name="idReclamo" value="<?php echo $data ['idReclamo']?>">
-                <button type="submit" class="btn btn-primary" onclick="return confirm('¿Está seguro de que desea enviar el formulario?');">Atendido</button>
+                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de que desea dar por terminado el reclamo?');">Atendido</button>
               </form>
             </td>
             
-            <td style="text-align: center"><a href="javascript:void(0)" onclick="mostarDetalles('<?php echo $data['idReclamo']; ?>')"><i class="glyphicon glyphicon-search"></i></a></td>                          
+            <td style="text-align: center"><a class="btn btn-primary" href="views/reclamos/mimodal.php?Id=<?php echo $data["idReclamo"]?>"><i class="glyphicon glyphicon-search"></i></a></td>                          
           </tr>
         <?php 
           } 
@@ -93,16 +93,7 @@
       </tbody>
     </table>
   </div>
-    <div id="divModal"></div>
-        <script>
-            function mostarDetalles(idReclamo) {
-                var ruta = 'mimodal.php';
-                $.get(ruta, function ($data) {
-                    $('#divModal').html($data);
-                    $('#myModal').modal('show');
-                });
-            }
-        </script>
+    
     <div class="paginador">
 			<ul>
  

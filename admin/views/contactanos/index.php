@@ -8,16 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="public/css/contactanos.css">
+  <link rel="stylesheet" href="public/css/consultas.css">
 </head>
 <body>
   <?php require_once("views/layouts/navbar.php");?>
   <main>
-    <header style="display: flex;">
-      <h1>Listado de Contacto</h1>
+    <header >
+      <h1 class="text-center">Listado de Contacto</h1>
     </header>
-
-    <table class="table">
+<div class="table-responsive px-5 ">
+    <table class="table table-striped table-bordered">
       <thead>
         <tr>
             <th scope="col">CODIGO</th>
@@ -26,7 +26,7 @@
             <th scope="col">CORREO</th>
             <th scope="col">TELEFONO</th>
             <th scope="col">MENSAJE</th>
-            <th scope="col"></th>
+            <th scope="col">ACCIONES</th>
         </tr>
       </thead>
       <tbody>
@@ -68,10 +68,10 @@
             <td><?php echo $data['correo']?></td>
             <td><?php echo $data['telf']?></td>
             <td><textarea class="msg" disabled><?php echo $data['msg']?></textarea></td>
-            <td>
+            <td style="text-align: center">
               <form action="atendidoContactanos" method="POST">
                 <input type="hidden" name="codigoId" value="<?php echo $data ['codigo']?>">
-                <button type="submit" class="btn btn-primary">Atendido</button>
+                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de que desea dar por terminado el contacto?');">Resuelta</button>
               </form>
             </td>
           </tr>
@@ -80,6 +80,7 @@
         }?>
       </tbody>
     </table>
+</div>
     <div class="paginador">
 			<ul>
 			<?php 
