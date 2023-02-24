@@ -20,7 +20,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-100px);
   }
   100% {
     transform: translateY(0);
@@ -45,7 +45,7 @@
         <a href="https://www.facebook.com/YuntasProducciones" class="contraste" target="_blank"><img src="public/img/fb.png"><span></span></a>
         <a href="https://www.instagram.com/yuntasproducciones/" class="contraste" target="_blank"><img src="public/img/inst.png"><span></span></a>
         <a href="https://wa.me/51912849782?text=Me%20interesa..." class="contraste" target="_blank"><img src="public/img/whattsap.png"><span></span></a>
-        <a href="https://www.youtube.com/@yuntasproducciones5082" class="contraste" target="_blank"><img src="public/img/youtube.png"><span></span></a>
+        <a href="https://www.youtube.com/@yuntasproducciones5082" class="contraste" target="_blank"><img src="public/img/yt2.png"><span></span></a>
         <a href="https://www.tiktok.com/@yuntasproducciones" class="contraste" target="_blank"><img src="public/img/tiktok.png"><span></span></a>
       </div>
     </div>
@@ -111,7 +111,7 @@
   
   .contraste{
     filter: brightness(0.5);
-    transition:all 0.5s ease-in-out;
+    transition:all 0.1s ease-in-out;
   }
   .contraste:hover {
     filter: none;
