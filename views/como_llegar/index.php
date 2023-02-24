@@ -24,7 +24,7 @@
     
 
     <section style="background: #000;padding: 1rem; height: auto;">
-       <h2 class="text-light p-3" style="color:#fff;font-weight: 700; font-size: 35px;text-align: center;text-decoration: underline #02a5f1"> Tienda, Horario y zona de cobertura</h2>
+       <h2 class="text-light p-3" style="color:#fff;font-weight: 700; font-size: 35px;text-align: center;text-decoration: underline #02a5f1; padding: 0.5em; position: relative; top: 20px"> Tienda, Horario y zona de cobertura</h2>
 
        <div style="display: auto;font-size: 2rem;color:#fff; ">
            <p>Nos puedes en contrar en: Jr.Paruro 1401 Tda. 130 Sótano, CC Shopping Center, Cercado de Lima.<br>Nuestro horario es de Lunes-Viernes 9:00 a.m. - 6:00 p.m.<br><br> A continuación, podras ubicarnos en el siguiente mapa, solo dando clik en el icono de:  </p>
@@ -41,7 +41,7 @@
         </div>
     </section>
 
-    <?php require_once("views/layouts/footer.php") ?>
+    <?php require_once("views/layouts/footer.php") ?> 
 </body>
 
 

@@ -23,7 +23,7 @@
     <?php require_once("views/layouts/navbar.php")?>
 
     <div class="main historia">
-        <div class="row only-card">
+        <div style="padding: 0.5em; position: relative; top: 20px" class="row only-card">
             <h3>Historia de Yuntas Producciones</h3>
             <img src="#" alt=" ">
         </div>

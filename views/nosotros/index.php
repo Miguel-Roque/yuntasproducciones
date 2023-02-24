@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="description" content="Conoce quienes somos, nuestra misión y visión como empresa con el fin de brindar una buena experiencia al cliente.">
     
-    <title>Nosotros</title>
+    <title >Nosotros</title>
     <link rel="icon" type="image/x-icon" href="public/nosotros/logowhite2.webp">
     <link rel="stylesheet" href="<?=URL?>public/css/normalize.css">
     <link rel="stylesheet"  href="public/css/nosotros.css">
@@ -23,7 +23,7 @@
     <?php require_once("views/layouts/navbar.php")?>
 
     <main class="main">
-        <div class="row only-card">
+        <div style="padding: 0.5em; position: relative; top: 10px" class="row only-card">
             <h3>Nuestra misión</h3>
             <div class="text">
                 <img src="#" alt="#" class="img-text">
