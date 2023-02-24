@@ -219,4 +219,5 @@
 </body>
 <script src="public/js/productos/main.js"></script>
 <?php require_once("views/layouts/footer.php") ?>
+
 </html>

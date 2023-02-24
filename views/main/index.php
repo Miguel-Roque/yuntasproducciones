@@ -25,27 +25,30 @@
 <body class="" style="background: #000000;">
   <?php require_once("views/layouts/navbar.php"); ?>
 
-    <div class="container container_banner">
-        <div id="carouselExampleIntervals" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="public/Personaliza/pantalla_led_01.webp" class="d-block w-100" alt="slide0">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="public/Personaliza/pantalla_led_02.webp" class="d-block w-100" alt="slide1">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="public/Personaliza/pantalla_led_03.jpg" class="d-block w-100" alt="slide2">
-            </div>
-          </div>
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2"></button>
-          </div>
+  <div class="container container_banner">
+    <div class="carousel slide carousel_home_body" id="carouselExampleIntervals" data-bs-ride="carousel">
+      <div class="carousel-inner view_carousel d-flex flex-row ">
+        <div class="carousel-item active slide active" data-bs-interval="3000" data-id="1" id="item_img_1">
+          <img src="public/img/fondo.webp" alt="slide0">
+        </div>
+        <div class="carousel-item slide" data-id="2" data-bs-interval="3000" id="item_img_2">
+          <img src="public/img/fondo1.webp" alt="slide1">
+        </div>
+        <div class="carousel-item slide" data-id="3" data-bs-interval="3000" id="item_img_3">
+          <img src="public/img/fondo2.webp" alt="slide2">
         </div>
       </div>
-      </div>
+    </div>
+    <div class=" points_carousel d-flex justify-content-center py-4" style="gap:10%">
+        <span class="buttons_carousel active" style="height:15px; width: 15px;"  data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
+        <img style= "height: 100%; width: 100%" src="public/img/fondo.webp" alt="slide0">
+        </span>
+        <span class="buttons_carousel" style="height:15px; width: 15px;" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1">
+        </span>
+        <span class="buttons_carousel" style="height:15px; width: 15px;"data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 2">
+        </span>
+    </div>
+  </div>
 
   <!-- sidebar -->
 

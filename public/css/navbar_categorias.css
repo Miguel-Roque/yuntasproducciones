@@ -154,11 +154,15 @@
 
 .container_banner .points_carousel .buttons_carousel:hover{
     cursor: pointer;
+    height: 50px;
+    width: 50px;
+
 }
 
 .container_banner .points_carousel span{
     display: block;
     font-size: 2rem;
+    
     color: white;
     background: #fbfbfb;
 }
