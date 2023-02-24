@@ -33,9 +33,9 @@
             </div>
           </div>
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"><img src="public/Personaliza/pantalla_led_01.webp" class="d-block" height="50px" width="50px" alt="slide0"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1"><img src="public/Personaliza/pantalla_led_02.webp" class="d-block" height="50px" width="50px" alt="slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2"><img src="public/Personaliza/pantalla_led_03.jpg" class="d-block" height="50px" width="50px" alt="slide2"></button>
           </div>
         </div>
       </div>
