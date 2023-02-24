@@ -16,8 +16,8 @@
             <H1>Listado de Articulos</H1>
         </center>
         <br>
-        <div class="container">
-            <table class="table">
+        <div class="container table-responsive ">
+            <table class="table  table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -39,7 +39,7 @@
                             <td><?php echo $Fila['titular']?></td>
                             <td><?php echo $Fila['detalle']?></td>
                             <td><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($Fila['imagen'])?>" alt=""></td>
-                            <td>
+                            <td style="text-align: center">
                                 <a href="views/blog/Vista_Editar.php?Id=<?php echo $Fila["idArticulo"]?>" class="btn btn-warning">Editar</a>
                             </td>
                         </tr>

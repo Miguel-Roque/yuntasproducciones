@@ -72,10 +72,10 @@
             <td><?php echo $data['cel']?></td>
             <td><textarea class="msg" disabled><?php echo $data['msg']?></textarea></td>
             <td><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($data['imagen'])?>" alt=""></td>
-            <td>
+            <td style="text-align: center">
               <form action="atendidoConsultas" method="POST">
                 <input type="hidden" name="id" value="<?php echo $data ['id']?>">
-                <button type="submit" class="btn btn-primary" onclick="return confirm('¿Está seguro de que desea enviar el formulario?');">Resuelta</button>
+                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de que desea dar por terminada la consulta?');">Resuelta</button>
               </form>
             </td>
           </tr>

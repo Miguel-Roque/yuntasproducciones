@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="public/css/contactanos.css">
+  <link rel="stylesheet" href="public/css/consultas.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
@@ -16,11 +16,11 @@
 <body>
   <?php require_once("views/layouts/navbar.php");?>
   <main>
-    <header style="display: flex;">
-      <h1>Listado de Reclamos</h1>
+    <header>
+      <h1 class="text-center" >Listado de Reclamos</h1>
     </header>
-
-    <table class="table">
+<div class="table-responsive px-5 ">
+    <table class="table table-striped table-bordered">
       <thead>
         <tr>
             <th scope="col">NUMERO DE RECLAMO</th>
@@ -32,14 +32,15 @@
             <th scope="col">CORREO ELECTRONICO</th>
             <th scope="col">PETICION</th>
             <th scope="col">ACCION</th>
-            <th></th>
+            <th scope="col">DETALLES</th>
         </tr>
       </thead>
       <tbody>
         <?php 
         include "core/conexion.php";
         //Paginador
-        $sql_registe = mysqli_query($conn,"SELECT COUNT(*) as total_registro FROM reclamo WHERE estado = 1");
+        $sql_registe = mysqli_query($conn,"SELECT COUNT(*) as total_registro FROM reclamo
+          ");
         $result_register = mysqli_fetch_array($sql_registe);
         $total_registro = $result_register['total_registro'];
 
@@ -56,7 +57,6 @@
         $total_paginas = ceil($total_registro / $por_pagina);
 
         $query = mysqli_query($conn,"SELECT * FROM reclamo 
-                                     WHERE estado = 1
                                      ORDER BY idReclamo 
                                      ASC LIMIT $desde,$por_pagina");
 
@@ -78,33 +78,25 @@
             <td><?php echo $data['correo']?></td>
             <td><?php echo $data['peticion']?></td>
             
-            <td>
+            <td style="text-align: center">
               <form action="atendidoReclamos" method="POST">
                 <input type="hidden" name="idReclamo" value="<?php echo $data ['idReclamo']?>">
-                <button type="submit" class="btn btn-primary">Atendido</button>
+                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de que desea dar por terminado el reclamo?');">Atendido</button>
               </form>
             </td>
             
-            <td style="text-align: center"><a href="javascript:void(0)" onclick="mostarDetalles('<?php echo $data['idReclamo']; ?>')"><i class="glyphicon glyphicon-search"></i></a></td>                          
+            <td style="text-align: center"><a class="btn btn-primary" href="views/reclamos/mimodal.php?Id=<?php echo $data["idReclamo"]?>"><i class="glyphicon glyphicon-search"></i></a></td>                          
           </tr>
         <?php 
           } 
         }?>
       </tbody>
     </table>
-    <div id="divModal"></div>
-        <script>
-            function mostarDetalles(idReclamo) {
-                var ruta = 'mimodal.php';
-                $.get(ruta, function ($data) {
-                    $('#divModal').html($data);
-                    $('#myModal').modal('show');
-                });
-            }
-        </script>
+  </div>
+    
     <div class="paginador">
 			<ul>
-
+ 
 			<?php 
 				if($pagina != 1)
 				{
@@ -132,6 +124,7 @@
 			</ul>
 		</div>
   </main>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
