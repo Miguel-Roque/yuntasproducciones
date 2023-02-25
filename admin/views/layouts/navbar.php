@@ -32,6 +32,7 @@
             <li><a href="reclamos">Administrar Reclamos</a></li>
             <li><a href="contactanos">Administrar Contactanos</a></li>
             <li><a href="consultas">Administrar Consultas</a></li>
+            <li><a href="usuarios">Administrar Usuarios</a></li>
             </ul>
             
         </div>
@@ -50,6 +51,7 @@
             <li><a href="#">Administrar Reclamos</a></li>
             <li><a href="contactanos">Administrar Contactanos</a></li>
             <li><a href="consultas">Administrar Consultas</a></li>
+            <li><a href="usuarios">Administrar Usuarios</a></li>
             </ul>
         </div>
         </div>
