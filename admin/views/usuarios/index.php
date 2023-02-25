@@ -69,7 +69,7 @@
             <td><?php echo $data['dni']?></td>
             
             <td style="text-align: center">
-              <form action="atendidoReclamos" method="POST">
+              <form action="deleteUser" method="POST">
                 <input type="hidden" name="idUsuario" value="<?php echo $data ['idUsuario']?>">
                 <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de que desea eliminar este usuario?');">Eliminar</button>
               </form>
