@@ -22,7 +22,7 @@
     <table class="table table-striped table-bordered">
       <thead>
         <tr>
-        <th scope="col">CODIGO</th>
+            <th scope="col">CODIGO</th>
             <th scope="col">USUARIO</th>
             <th scope="col">CONTRASEÑA</th>
             <th scope="col">DNI</th>
