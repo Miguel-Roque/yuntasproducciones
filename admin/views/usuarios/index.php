@@ -18,6 +18,9 @@
   <main>
       <h1 class="text-center">Listado de Usuarios</h1>
     </header>
+    <center><a type="button" class="btn btn-primary" href="views/usuarios/crear.php">Registrar</a></center>
+    <br>
+    
 <div class="table-responsive px-5 ">
     <table class="table table-striped table-bordered">
       <thead>
