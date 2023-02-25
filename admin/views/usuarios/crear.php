@@ -34,7 +34,7 @@
               </div>
 
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Password" required>
+                <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Password" required>
                 <label for="password">Password</label>
               </div>
 

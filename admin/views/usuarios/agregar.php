@@ -4,10 +4,10 @@
 
 	$id=$_POST['idUsuario'];
 	$user=$_POST['usuario'];
-    $pass=$_POST['contraseña'];
+    $pass=$_POST['contrasena'];
 	$dni=$_POST['dni'];
-    $sql = "INSERT INTO `usuarios` ( idUsuario , usuario , contraseña, dni) 
-            VALUES ($id,$user, aes_encrypt('$pass','key'), '$dni')";
+    $sql = "INSERT INTO `usuarios` ( idUsuario , usuario , contrasena, dni) 
+            VALUES ('$id','$user', aes_encrypt('$pass','key'), '$dni')";
     $resultado = $conn -> query($sql);
 
     if ($resultado) {
@@ -15,3 +15,4 @@
     }else {
         echo "No se insertaron";
     }
+?>
