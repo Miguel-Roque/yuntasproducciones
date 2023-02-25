@@ -21,7 +21,7 @@
           </div>
           <div class="card-body p-4 p-sm-5">
             <h5 class="card-title text-center mb-5 fw-light fs-5">Registrarse</h5>
-            <form action="servidor/registro/registrar.php" method="post">
+            <form action="agregar.php" method="post">
 
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="idUsuario" name="idUsuario" placeholder="Codigo" required autofocus>
@@ -48,7 +48,7 @@
                 <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Registrar</button>
               </div>
               <div class="d-grid mb-2">
-                <button class="btn btn-lg btn-danger btn-login fw-bold text-uppercase" type="button" onclick="window.history.back()">Cancelar</button>
+                <button class="btn btn-lg btn-outline-danger btn-login fw-bold text-uppercase" type="button" onclick="window.history.back()">Cancelar</button>
               </div>
 
               <hr class="my-4">
