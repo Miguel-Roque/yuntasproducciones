@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="public/css/registro.css">
 
     <title>Registro de Usuario</title>
+    
   </head>
   <body>
   <div class="container">
