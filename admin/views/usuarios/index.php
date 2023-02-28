@@ -53,7 +53,7 @@
         $desde = ($pagina-1) * $por_pagina;
         $total_paginas = ceil($total_registro / $por_pagina);
 
-        $query = mysqli_query($conn,"SELECT * FROM usuarios 
+        $query = mysqli_query($conn,"SELECT idUsuario, usuario, CONVERT(aes_decrypt(contrasena,'key')USING utf8)contrasena,dni FROM usuarios 
                                      ORDER BY idUsuario 
                                      ASC LIMIT $desde,$por_pagina");
 
