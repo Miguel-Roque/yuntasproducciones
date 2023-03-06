@@ -32,20 +32,33 @@
       <div class="carousel-inner slider view_carousel d-flex flex-row ">
         <div class="carousel-item active" data-bs-interval="3500" data-id="1" id="item_img_1">
           <img src="public/img/fondo.webp" alt="slide0" class="w-100 h-100">
-              <div class="carousel-caption">
-                  <a href="https://yuntasproducciones.com/blog">
+              <div class="carousel-caption"> 
+              <a href="https://yuntasproducciones.com/blog">
                       <button type="button" class="boton-neon">
-                            <span>Preguntale a Yuntas</span>
+                            <span style="filter: brightness(2)" >Yuntea Aquí</span>
                       </button>
-                  </a>
-    </div>
-
+              </a>     
+              </div>
         </div>
         <div class="carousel-item" data-id="2" data-bs-interval="3500" id="item_img_2">
           <img src="public/img/fondo1.webp" alt="slide1" class="w-100 h-100">
+          <div class="carousel-caption"> 
+              <a href="https://yuntasproducciones.com/blog">
+                      <button type="button" class="boton-neon-1">
+                            <span style="filter: brightness(2)">Yuntea Aquí</span>
+                      </button>
+              </a>     
+            </div>
         </div>
         <div class="carousel-item " data-id="3" data-bs-interval="3500" id="item_img_3">
           <img src="public/img/fondo2.webp" alt="slide2" class="w-100 h-100">
+          <div class="carousel-caption"> 
+              <a href="https://yuntasproducciones.com/blog">
+                      <button type="button" class="boton-neon-2">
+                            <span style="filter: brightness(2);">Yuntea Aquí</span>
+                      </button>
+              </a>     
+              </div>
         </div>
       </div>
       <div class="carousell carousel-indicators m-6 gap-5 position-relative">
