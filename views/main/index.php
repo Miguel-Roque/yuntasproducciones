@@ -27,27 +27,35 @@
  <br>
  <br>
  <br>
-  <div class="container container_banner">
+<div class="container container_banner">
   <div class="carousel slide carousel_home_body" id="carouselExampleIntervals" data-bs-ride="carousel">
-      <div class="carousel-inner view_carousel d-flex flex-row ">
-        <div class="carousel-item active slide active" data-bs-interval="3000" data-id="1" id="item_img_1">
-          <img src="public/img/fondo.webp" alt="slide0">
+      <div class="carousel-inner slider view_carousel d-flex flex-row ">
+        <div class="carousel-item active" data-bs-interval="3500" data-id="1" id="item_img_1">
+          <img src="public/img/fondo.webp" alt="slide0" class="w-100 h-100">
+              <div class="carousel-caption">
+                  <a href="https://yuntasproducciones.com/blog">
+                      <button type="button" class="boton-neon">
+                            <span>Preguntale a Yuntas</span>
+                      </button>
+                  </a>
+    </div>
+
         </div>
-        <div class="carousel-item slide" data-id="2" data-bs-interval="3000" id="item_img_2">
-          <img src="public/img/fondo1.webp" alt="slide1">
+        <div class="carousel-item" data-id="2" data-bs-interval="3500" id="item_img_2">
+          <img src="public/img/fondo1.webp" alt="slide1" class="w-100 h-100">
         </div>
-        <div class="carousel-item slide" data-id="3" data-bs-interval="3000" id="item_img_3">
-          <img src="public/img/fondo2.webp" alt="slide2">
+        <div class="carousel-item " data-id="3" data-bs-interval="3500" id="item_img_3">
+          <img src="public/img/fondo2.webp" alt="slide2" class="w-100 h-100">
         </div>
       </div>
-      <div class="carousel-indicators py-5">
-        <button type="button" class="buttons_carousel active" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
+      <div class="carousell carousel-indicators m-6 gap-5 position-relative">
+        <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
         <img src="public/img/fondo.webp" class="d-block"  alt="slide0" width="80px" height="60px">
         </button>
-        <button type="button" class="buttons_carousel" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1">
+        <button type="button" class="mx-5" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1">
         <img src="public/img/fondo1.webp" class="d-block" alt="slide1" width="80px" height="60px" >
         </button>
-        <button type="button" class="buttons_carousel" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2">
+        <button type="button" class="me-5" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2">
         <img src="public/img/fondo2.webp" class="d-block" alt="slide2" width="80px" height="60px" >
         </button>
     </div>
@@ -58,7 +66,7 @@
 
   <!-- sidebar -->
   
-  <div class="container_navbar_categorias container">
+  <div class="container_navbar_categorias container" >
     <nav>
       <ul class="ul_categorias">
         <li class="li">
@@ -121,16 +129,17 @@
     </nav>
   </div>
   <!-- banner -->
-  <div class="container container_banner">
+  <div class="container container_banner" >
     <div class="banner">
 
     </div>
   </div>
 
-  <div class="container_productos" style="background: #fff;">
+  <div class="container_productos" id="productosbanner" style="background: #fff;">
     <h1 class="titulos2">
-      <span>PRODUCTOS</span>
+      <span>Conoce Nuestros Productos</span>
     </h1>
+    <h2 class="subtitulo2  text-center fs-1 ">Esto Tenemos para ti</h2>
     <div class="container-sm py-5">
       <div style="margin:0 auto;" class="row">
         <div class="col-lg-4 col-md-6">
@@ -216,6 +225,17 @@
   </div>
 
   <?php require_once("views/layouts/footer.php") ?>
-  
+ <script>
+     
+$(document).ready(function(){
+  $('.carousel').on('slide.bs.carousel', function(event){
+    var index = event.to;
+    $('.buttons_carousel').removeClass('active');
+    $('.buttons_carousel[data-bs-slide-to="'+index+'"]').addClass('active');
+  });
+});
+
+
+  </script>
 </body>
 </html>

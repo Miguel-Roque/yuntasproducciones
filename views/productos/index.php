@@ -40,14 +40,14 @@
           <img src="public/img/fondo2.webp" alt="slide2">
         </div>
       </div>
-      <div class="carousel-indicators py-5">
+      <div class="carousel-indicators m-6 gap-5 position-relative">
         <button type="button" class="buttons_carousel active" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
         <img src="public/img/fondo.webp" class="d-block"  alt="slide0" width="80px" height="60px">
         </button>
-        <button type="button" class="buttons_carousel" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1">
+        <button type="button" class="mx-5 buttons_carousel" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 1">
         <img src="public/img/fondo1.webp" class="d-block" alt="slide1" width="80px" height="60px" >
         </button>
-        <button type="button" class="buttons_carousel" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2">
+        <button type="button" class="buttons_carousel me-5" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 2">
         <img src="public/img/fondo2.webp" class="d-block" alt="slide2" width="80px" height="60px" >
         </button>
     </div>

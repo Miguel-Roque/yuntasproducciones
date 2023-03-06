@@ -14,12 +14,12 @@
 <body>
     <header>
 
-        <nav class="nav-principal" style="top: 0px;">
+        <nav class="nav-principal" style="">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <a href="main" class="enlace">
+            <a href="#" class="enlace">
                 <img src="public/productos_neon_led/logowhite.webp" alt="" class="logo">
             </a>
             <ul class="menu" id="menu">
@@ -35,7 +35,7 @@
                     </ul>
 
                 </li>
-                <li><a href="main#productosbanner">Productos<span class="icon-chevron-small-down icon2"></span></a>
+                <li><a href="productos">Productos<span class="icon-chevron-small-down icon2"></span></a>
 
                     <ul class="submenu" style="z-index: 90;">
                         <li><a href="producto?slug=Pantalla Led"><img src="public/icons/1-h.png">Pantallas Led</a>
@@ -63,7 +63,6 @@
  
 
 
-   
 
 </body>
 

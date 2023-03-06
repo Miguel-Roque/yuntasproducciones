@@ -21,30 +21,64 @@
   <body>
     <?php	require_once("views/layouts/navbar.php");?>
 
-    <div class="info info-first">
-      <div class="slider">
-        <div id="carouselExampleIntervals" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-              <img src="public/ventiladores_holograficos/ventilador_holografico_1.jpg" class="d-block w-100" alt="slide1">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="public/ventiladores_holograficos/ventilador_holografico_2.jpg" class="d-block w-100" alt="slide2">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="public/ventiladores_holograficos/ventilador_holografico_3.jpg" class="d-block w-100" alt="slide3">
-            </div>
+<div class="container-fluid bg-black">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10 col-12">
+      <div id="carouselExampleIntervals" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="public/ventiladores_holograficos/ventilador_holografico_3.jpg" class="d-block w-100" alt="slide1">
           </div>
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="public/ventiladores_holograficos/ventilador_holografico_1.jpg" class="d-block" height="60px" width="80px" alt="slide1"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" aria-label="Slide 2"><img src="public/ventiladores_holograficos/ventilador_holografico_2.jpg" class="d-block" height="60px" width="80px" alt="slide2"></button>
-            <button type="button" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" aria-label="Slide 3"><img src="public/ventiladores_holograficos/ventilador_holografico_3.jpg" class="d-block" height="60px" width="80px" alt="slide3"></button>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="public/ventiladores_holograficos/ventilador_holografico_2.jpg" class="d-block w-100" alt="slide2">
           </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="public/ventiladores_holograficos/ventilador_holografico_3.jpg" class="d-block w-100" alt="slide3">
+          </div>
+        </div>
+        <div class="carousel-indicators m-6 gap-5 position-relative">
+          <button type="button" class="carousel-nav-item active" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="0" style="background-image: url('public/ventiladores_holograficos/ventilador_holografico_3.jpg') ;height: 60px;width: 80px;" aria-label="Slide 1"></button>
+          <button type="button" class="carousel-nav-item" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="1" style="background-image: url('public/ventiladores_holograficos/ventilador_holografico_2.jpg');height: 60px;width: 80px;" aria-label="Slide 2"></button>
+          <button type="button" class="carousel-nav-item" data-bs-target="#carouselExampleIntervals" data-bs-slide-to="2" style="background-image: url('public/ventiladores_holograficos/ventilador_holografico_3.jpg');height: 60px;width: 80px;" aria-label="Slide 3"></button>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 <style>
+ 
+
+  .carousel-indicators button {
+    height: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    margin-bottom:10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+    outline: none;
+  }
+  
+  
+  
+  .carousel-inner img {
+    max-width: 100%;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+    padding-top: 90px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carousel-inner img {
+      max-height: 450px;
+      padding-top: 10rem;
+    }
+  }
+  
  .modal-content {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;

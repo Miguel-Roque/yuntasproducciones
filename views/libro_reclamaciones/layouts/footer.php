@@ -44,7 +44,7 @@
       <div style="margin-bottom: 5px;">
         <a href="https://www.facebook.com/YuntasProducciones" class="contraste" target="_blank"><img src="public/img/fb.png"><span></span></a>
         <a href="https://www.instagram.com/yuntasproducciones/" class="contraste" target="_blank"><img src="public/img/inst.png"><span></span></a>
-        <a href="https://wa.me/51912849782?text=Me%20interesa..." class="contraste" target="_blank"><img src="public/img/wtsp azul.png"><span></span></a>
+        <a href="https://wa.me/51912849782?text=Me%20interesa..." class="contraste" target="_blank"><img src="public/img/whattsap.png"><span></span></a>
         <a href="https://www.youtube.com/@yuntasproducciones5082" class="contraste" target="_blank"><img src="public/img/yt2.png"><span></span></a>
         <a href="https://www.tiktok.com/@yuntasproducciones" class="contraste" target="_blank"><img src="public/img/tiktok.png"><span></span></a>
       </div>
@@ -54,18 +54,18 @@
     </li>
 
     <li class="nav__item" style="text-align: center;">
-      <h2 class="nav__title"><i class="fa-solid fa-address-book"> </i> Contacto y Atención al cliente</h2> 
+      <h2 class="nav__title">Contacto y Atención al cliente</h2> 
 
       <ul class="nav__ul" style="font-size: 1.5rem;">
         <li>
-          <a href="https://wa.me/51912849782?text=Me%20interesa..." target="_blank"><i class="fa-brands fa-whatsapp"> </i> WhatsApp: 99898989</a><br>
-          <a href="tel:+51 0555"><i class="fa-sharp fa-regular fa-circle-phone-flip"></i> Telefono Lima: 051 0555</a>
+          <a href="#">WhatsApp: 99898989</a><br>
+          <a href="#">Telefono Lima: 051 0555</a>
         </li>
       </ul>
     </li>
 
     <li class="nav__item" style="text-align: center;">
-      <h2 class="nav__title"> <i class="fa-solid fa-calendar-days"> </i> Horario</h2>
+      <h2 class="nav__title">Horario</h2>
 
       <ul class="nav__ul" style="font-size: 1.5rem;">
         <li>
@@ -99,7 +99,6 @@
   </div>  
    
 </footer>
-<script src="https://kit.fontawesome.com/3df9d7cdc9.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

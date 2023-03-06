@@ -32,11 +32,7 @@
 }
 
 
-button[data-bs-target] {
-    position: relative ;
-    margin-right: 60px !important;
-    margin-left: 60px !important;
-}
+
 
 .titulos2-container {
     display: flex;
@@ -224,10 +220,6 @@ h2.subtitulo2 {
         border-radius: 0;
     }
 
-    .carousel-indicators button { 
-        display: none;
-    }
-
     .info-2-first p {
         margin-bottom: 60px;
     }
@@ -248,7 +240,7 @@ h2.subtitulo2 {
 }
 
 @media (max-width: 426px) {
-  .slider img {
+  .slider .carousel-inner img {
       height: 300px;
   }
 
