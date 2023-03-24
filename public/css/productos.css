@@ -204,6 +204,22 @@ h2.subtitulo2 {
     font-size: 2.4rem;
 }
 
+h2.subtitulo3 {
+    position: relative; 
+    bottom: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height:60px; 
+    margin: auto; 
+    padding: 20px;
+    text-align: center;
+    background-color: #2AA4BF; 
+    color: white; 
+    border-radius: 0 0 30px 30px;
+    font-size: 2.4rem;
+}
 .info-2 {
     width: 60%;
     margin: auto;
