@@ -3,9 +3,9 @@
 
 class ModeloBase  {
 	public $server = 'localhost';
-	public $user = 'ghxumdmy_yuntasproducciones';
-	public $pass = 'ghxumdmy_yuntasproducciones';
-	public $db = 'ghxumdmy_yuntasproducciones';
+	public $user = 'root';
+	public $pass = '';
+	public $db = 'yuntas';
 
 	// Conexión a bd - MySQL
 	// public $string;

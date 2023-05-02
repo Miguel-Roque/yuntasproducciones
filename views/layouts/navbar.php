@@ -24,14 +24,14 @@
             </a>
             <ul class="menu" id="menu">
                 <li id="options"><a class="active" href="main">Inicio</a></li>
-                <li><a href="">Nosotros<span class="icon-chevron-small-down icon2"></span></a>
+                <li><a href="nosotros">Nosotros<span class="icon-chevron-small-down icon2"></span></a>
 
                     <ul class="submenu" id="options" style="z-index: 90;">
-                        <li><a href="nosotros"><img src="public/icons/7.png"> Nuesta misión, visión </br> y valores</a>
+                        <li><a href="nosotros"><img src="public/icons/7.png"> Nuestra misión, visión </br> y valores</a>
                         </li>
                         <li><a href="como_llegar"><img src="public/icons/8.png"> Tienda, horarios y </br> zona de
                                 cobertura</a></li>
-                        <li><a href="historia"><img src="public/icons/9.png"> Historia de Yuntas</a></li>
+                    
                     </ul>
 
                 </li>
@@ -50,7 +50,7 @@
                         <li><a href="producto?slug=Cubo Led"><img src="public/icons/4-h.png">Cubos Led</a></li>
                         <li><a href="producto?slug=Relojes digitales"><img src="public/icons/5-h.png">Relojes
                                 Digitales</a></li>
-                        <li><a href="producto?slug=Letreros led"><img src="public/icons/6-h.png">Letreros Led</a></li>
+                        <li><a href="producto?slug=Paneles electronicos Led"><img src="public/icons/6-h.png">Paneles electronicos Led</a></li>
                     </ul>
 
                 </li>

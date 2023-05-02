@@ -26,38 +26,43 @@
         <div style="padding: 0.5em; position: relative; top: 10px" class="row only-card">
             <h3>Nuestra misión</h3>
             <div class="text">
-                <img src="#" alt="#" class="img-text">
-                <p>HACER REALIDAD LAS IDEAS DE NUESTROS CLIENTES CON NUESTROS PRODUCTOS CON LA MEJOR CALIDAD A UN PRECIO IDEA</p>
+                <img src="public/nosotros/Misión.webp" alt="#" class="img-text">
+                <p >Buscamos acompañarte en tus ideas más importantes de manera segura para generar 
+identidad y valor en tus mejores proyectos, comprometidos con expresar  
+autenticidad  iluminando cualquier espacio para tí.</p>
             </div>
         </div>
         <div class="row only-card">
             <h3>Nuestra visión</h3>
             <div class="text">
-                <p>SER LA EMPRESA QUE EXPRESE INNOVACIÓN Y CREATIVIDAD EN EL MUNDO DE LA PUBLICIDAD, BUSCANDO EVOLUCIONAR EN NUESTROS PROCESOS IMPLEMENTANDO LA TECNOLOGÍA MAS EFICIENTE</p>
-                <img src="#" alt="#" class="img-text">
+                <p class="text-justify">Ser lider en el rubro tecnologico y la primera opción para nuestros clientes, 
+ofreciendo diversos elementos publicitarios con el fin de contribuir en entregar
+productos de calidad expresando innovación cumpliendo con las 
+expectativas de nuestros clientes. </p>
+                <img src="public/nosotros/Visión.webp" alt="#" class="img-text">
             </div>
         </div>
         <div class="row only-card">
             <h3>Nuestros valores</h3>
             <div class="text">
-                <img src="#" alt="#" class="img-text">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, aliquam in necessitatibus eius ex natus itaque beatae officia est nesciunt, voluptatem similique minus libero veritatis repudiandae possimus architecto modi neque.</p>
+                <img src="public/nosotros/Valores_11zon.webp" alt="#" class="img-text">
+                <p>Confianza, Compromiso y Calidad</p>
             </div>
         </div>
         <div class="row only-card">
-            <h3>Nuestros compromiso</h3>
+            <h3>Nuestros compromisos</h3>
             <div class="row" style="padding: 0;">
                 <div class="col-12 col-sm-4 cards">
-                    <img src="#" alt=" ">
-                    <h4>Poner el compromiso</h4>
+                    
+                    <h4>Confianza</h4>
                 </div>
                 <div class="col-12 col-sm-4 cards">
-                    <img src="#" alt=" ">
-                    <h4>Poner el compromiso</h4>
+                   
+                    <h4>Compromiso</h4>
                 </div>
                 <div class="col-12 col-sm-4 cards">
-                    <img src="#" alt=" ">
-                    <h4>Poner el compromiso</h4>
+                    
+                    <h4>Calidad</h4>
                 </div>
             </div>
         </div>

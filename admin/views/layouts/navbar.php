@@ -48,7 +48,7 @@
             </button>
             <ul class="nav-sidebar-menu">
             <li><a href="blog">Administrar Blog</a></li>
-            <li><a href="#">Administrar Reclamos</a></li>
+            <li><a href="reclamos">Administrar Reclamos</a></li>
             <li><a href="contactanos">Administrar Contactanos</a></li>
             <li><a href="consultas">Administrar Consultas</a></li>
             <li><a href="usuarios">Administrar Usuarios</a></li>

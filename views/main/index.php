@@ -32,17 +32,18 @@
       <div class="carousel-inner slider view_carousel d-flex flex-row ">
         <div class="carousel-item active" data-bs-interval="3500" data-id="1" id="item_img_1">
           <img src="public/img/fondo.webp" alt="slide0" class="w-100 h-100">
-              <div class="carousel-caption"> 
-              <a href="https://yuntasproducciones.com/blog">
+              <div class="carousel-caption">
+                 <a href="https://yuntasproducciones.com/blog">
                       <button type="button" class="boton-neon">
                             <span style="filter: brightness(2)" >Yuntea Aquí</span>
                       </button>
-              </a>     
-              </div>
+              </a>    
+    </div>
+
         </div>
         <div class="carousel-item" data-id="2" data-bs-interval="3500" id="item_img_2">
           <img src="public/img/fondo1.webp" alt="slide1" class="w-100 h-100">
-          <div class="carousel-caption"> 
+           <div class="carousel-caption"> 
               <a href="https://yuntasproducciones.com/blog">
                       <button type="button" class="boton-neon-1">
                             <span style="filter: brightness(2)">Yuntea Aquí</span>
@@ -130,7 +131,7 @@
           </a>
         </li>
         <li class="li">
-          <a href="producto?slug=Letreros led">
+          <a href="producto?slug=Paneles electronicos Led">
             <img width='50' height='50' src="public/img/icons_categorias/006.png" class="img_one" alt="">
             <img width='50' height='50' src="public/img/icons_categorias/60.png" class="img_two" alt="">
             <span>
@@ -150,7 +151,7 @@
 
   <div class="container_productos" id="productosbanner" style="background: #fff;">
     <h1 class="titulos2">
-      <span>Conoce Nuestros Productos</span>
+      <span >Conoce Nuestros Productos</span>
     </h1>
     <h2 class="subtitulo2  text-center fs-1 ">Esto Tenemos para ti</h2>
     <div class="container-sm py-5">
@@ -169,7 +170,7 @@
           <!-- <h2 class="subtitulo2">LETREROS NEÓN LED</h2> -->
         </div>
         <div class="col-lg-4 col-md-6">
-          <a href="producto?slug=Letreros led" class="item_product position-relative d-block" style="margin-bottom: 20px;">
+          <a href="producto?slug=Paneles electronicos Led" class="item_product position-relative d-block" style="margin-bottom: 20px;">
             <img style="width: 100%;height:308px;padding: 4px;object-fit: cover; border-radius: 30px;" src="views/assets/letrerosled.webp" alt="enlaces">
             <span class="more_info position-absolute fs-3 fw-normal" style="background:#3399cca6; visibility:hidden; top:160px; left: calc(60% - 150px);color:#fff; padding: 10px 40px;border-radius: 10px; font-family: sans-serif;">
               Más Infomación
@@ -177,7 +178,7 @@
                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
               </svg>
             </span>
-            <h2 class="subtitulo2 position-absolute text-center fs-3 fw-normal" style="bottom: 0px; background:#39c; padding: 10px 4px; color:#fff; width:calc(100% - 8px); margin:0px 4px; border-bottom-left-radius:30px;border-bottom-right-radius:30px">LETREROS LED</h2>
+            <h2 class="subtitulo2 position-absolute text-center fs-3 fw-normal" style="bottom: 0px; background:#39c; padding: 10px 4px; color:#fff; width:calc(100% - 8px); margin:0px 4px; border-bottom-left-radius:30px;border-bottom-right-radius:30px">Paneles electronicos Led</h2>
           </a>
           <!-- <h2 class="subtitulo2">LETREROS LED</h2> -->
         </div>

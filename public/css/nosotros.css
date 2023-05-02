@@ -52,6 +52,8 @@
 }
 
 .only-card p {
+    text-align: justify;
+    margin: 20px;
     max-width: 400px;
     margin-left: 10px;
     font-weight: bold;
@@ -95,7 +97,7 @@
     font-size: 3rem;
     font-weight: bold;
     color: #2AA4BF;
-    content: "Imagen de la empresa";
+   
 }
 
 .como-surgio {

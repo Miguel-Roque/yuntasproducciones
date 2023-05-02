@@ -32,6 +32,45 @@
     }
   }
  
+.cards {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .cards:hover {
+    box-shadow: 0 0 15px rgba(2, 90, 162, 0.784);
+    transform: translateY(-5px);
+  }
+.card-titles {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem !important;
+  text-align: center;
+  }
+  
+  .card-texts {
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-texts li {
+    margin-bottom: 0.5rem;
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .card-texts li:before {
+    content: "\2022";
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    top: 0.125rem;
+  }
 .info {
     width: 100%;
     padding: 4%;
@@ -187,11 +226,12 @@
 }
 
 .titulos2 {
+    padding-top: 40px;
     display: inline-block;
     margin: 15px auto 30px;
     font-size: 4.6rem;
     font-weight: bold;
-    text-align: center;
+    text-align: justify;
     cursor: none;
 }
 
@@ -217,7 +257,7 @@ h2.subtitulo2 {
     background-color: #2AA4BF; 
     color: white; 
     border-radius: 0 0 30px 30px;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .info-2 {
@@ -225,6 +265,7 @@ h2.subtitulo2 {
     margin: auto;
     font-size: 2.5rem;
     text-align: justify;
+    
 }
 
 .info-2-first > p {

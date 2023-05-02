@@ -26,7 +26,7 @@ if($imagen === null) {
 $resultado = $conn->query($sql);
 
 if ($resultado) {
-    header("Location: http://localhost/YUNTAS_producciones/admin/blog");
+    header("Location: https://yuntasproducciones.com/admin/blog");
 }else {
     echo "No se insertaron los datos";
 }

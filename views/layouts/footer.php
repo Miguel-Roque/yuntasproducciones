@@ -1,4 +1,6 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
   .float-button {
@@ -32,72 +34,73 @@
 
 
     <a href="https://wa.me/51912849782?text=Me%20interesa..." target="_blank" class="float-button">
-    <img src="public/img/whattsap.png">
+    <img src="public/img/whattsap.png" alt="Whatsapp Yuntas">
       
       
     </a>
 
 
     <footer class="footer">
-    <div class="redes">
+    <div class="container-fluid redes">
       <a href="#">Sigue a Yuntas Producciones </a>
       <div style="margin-bottom: 5px;">
-        <a href="https://www.facebook.com/YuntasProducciones" class="contraste" target="_blank"><img src="public/img/fb.png"><span></span></a>
-        <a href="https://www.instagram.com/yuntasproducciones/" class="contraste" target="_blank"><img src="public/img/inst.png"><span></span></a>
-        <a href="https://wa.me/51912849782?text=Me%20interesa..." class="contraste" target="_blank"><img src="public/img/wtsp azul.png"><span></span></a>
-        <a href="https://www.youtube.com/@yuntasproducciones5082" class="contraste" target="_blank"><img src="public/img/yt2.png"><span></span></a>
-        <a href="https://www.tiktok.com/@yuntasproducciones" class="contraste" target="_blank"><img src="public/img/tiktok.png"><span></span></a>
+        <a href="https://www.facebook.com/YuntasProducciones" class="contraste" target="_blank"><img src="public/img/fb.png" alt="Facebook Yuntas"><span></span></a>
+        <a href="https://www.instagram.com/yuntasproducciones/" class="contraste" target="_blank"><img src="public/img/inst.png" alt="Instagram Yuntas"><span></span></a>
+        <a href="https://wa.me/51912849782?text=Me%20interesa..." class="contraste" target="_blank"><img src="public/img/wtsp azul.png" alt="Facebook Yuntas"><span></span></a>
+        <a href="https://www.youtube.com/@yuntasproducciones5082" class="contraste" target="_blank"><img src="public/img/yt2.png" alt="Youtube Yuntas"><span></span></a>
+        <a href="https://www.tiktok.com/@yuntasproducciones" class="contraste" target="_blank"><img src="public/img/tiktok.png" alt="Tiktok Yuntas"><span></span></a>
       </div>
     </div>
-   <ul class="footer__nav">
-    <li class="nav__item">
-    </li>
+    <footer class="footer bg-light pt-5">
+  <div class="container-fluid">
+    <ul class="list-unstyled row text-center">
+      <li class="col-md-4 mb-4 col-6">
+        <h2 class=""><i class="fa-solid fa-address-book"> </i> <strong>Contacto y Atencion al cliente</strong></h2> 
+        <ul class="" style="font-size: 1.5rem;">
+          <li>
+            <a href="https://wa.me/51912849782?text=Me%20interesa..." target="_blank" class="text-dark"><i class="fa-brands fa-whatsapp"> </i> WhatsApp: 912849782</a><br>
+          </li>
+        </ul>
+      </li>
 
-    <li class="nav__item" style="text-align: center;">
-      <h2 class="nav__title"><i class="fa-solid fa-address-book"> </i> Contacto y Atención al cliente</h2> 
+      <li class="col-md-4 mb-4 col-6">
+        <h2 class="font-bold"> <i class="fa-solid fa-calendar-days"> </i> <strong> Horario </strong></h2>
+        <ul class="" style="font-size: 1.5rem;">
+          <li>
+            <a href="#" class="text-dark">Lunes-Viernes</a><br>
+            <a href="#" class="text-dark">9:00 a.m. - 6:00 p.m.</a>
+          </li>
+        </ul>
+        <h2 class="pt-4" style=" color: #2AA4BF;"><strong>Libro de reclamos</strong></h2>
+        <ul class="">
+          <li>
+            <center><a href="libro_reclamaciones" class="btn" style="color:#fff ; font-size: 1.5rem; "> <strong>Libro de reclamos </strong></a></center>
+          </li>
+        </ul>
+      </li>
 
-      <ul class="nav__ul" style="font-size: 1.5rem;">
-        <li>
-          <a href="https://wa.me/51912849782?text=Me%20interesa..." target="_blank"><i class="fa-brands fa-whatsapp"> </i> WhatsApp: 99898989</a><br>
-          <a href="tel:+51 0555"><i class="fa-sharp fa-regular fa-circle-phone-flip"></i> Telefono Lima: 051 0555</a>
-        </li>
+      <li class="col-md-4 mb-4 col-6 mt-4">
+        <h2 class=""><strong>Formas de pagos</strong></h2>
+        <ul class="">
+          <li>
+            <a href="#" class=""><img src="public/img/logovisa.jpg" alt="Visa Yuntas" class="img-fluid" style="max-width: 70px;"></a>
+            <a href="#" class=""><img src="public/img/mast.png" alt="Mastercard Yuntas" class="img-fluid" style="max-width: 70px;"></a>
+          </li>
+        </ul>
+        <ul class=" mt-5 mx-5 text-center">
+        <div class="text-center">
+          <img src="public/img/Ylogo.png" class="img-fluid" alt="" style="max-width: 200px;"> 
+        </div>
       </ul>
-    </li>
+      </li>
 
-    <li class="nav__item" style="text-align: center;">
-      <h2 class="nav__title"> <i class="fa-solid fa-calendar-days"> </i> Horario</h2>
-
-      <ul class="nav__ul" style="font-size: 1.5rem;">
-        <li>
-          <a href="#">Lunes-Viernes</a><br>
-          <a href="#">9:00 a.m. - 6:00 p.m.</a>
-        </li>
-      </ul>
-      <h2 class="nav__title" style="text-align: center; color: #2AA4BF;">Libro de reclamos</h2>
-
-      <ul class="nav__ul">
-        <li>
-          <center><a href="libro_reclamaciones" class="btn" style="color:#fff ; font-size: 1.5rem; ">Libro de reclamos</a></center>
-        
-        </li>
-      </ul>
-    </li>
-    <li class="nav__item">
-      <h2 class="nav__title">Formas de pagos</h2>
-
-      <ul class="nav__ul">
-        <li>
-          <a href="#" class=""><img src="public/img/logovisa.jpg"></a>
-          <a href="#" class=""><img src="public/img/mast.png"></a>
-        </li>
-      </ul>
-    </li>
-
-  </ul>
-  <div class="footer__addr">
-    <img src="public/img/Ylogo.png" alt=""> 
+      
+      
+    </ul>
   </div>  
-   
+</footer>
+
+
 </footer>
 <script src="https://kit.fontawesome.com/3df9d7cdc9.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -145,17 +148,8 @@
     padding: 2px;
    
   }
-  .nav__ul img{
-    width: 80px;
-    height: 50px;
-    padding: 5px;
-    display: inline-block; 
-    vertical-align: middle; 
-  }
-  .footer__addr img{
-      width: 280px;
-      
-  }
+
+  
   .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -183,18 +177,6 @@
 
   }
 
-  .footer__addr h2 {
-    margin-top: 1.3rem;
-    font-size: 25px;
-    font-weight: 400;
-  }
-
-  .nav__title {
-    font-weight: 400;
-    font-size: 21px;
-    margin-top: 3.5rem; 
-    font-weight: 700;
-  }
 
   .footer address {
     font-style: normal;
@@ -229,35 +211,9 @@
     text-decoration: none;
   }
 
-  .footer__nav {
-    display: flex;
-      flex-flow: row wrap;
-  }
-
-  .footer__nav > * {
-    flex: 1 50%;
-    margin-right: 1.25em;
-  }
-
-  .nav__ul a {
-  color: #0D0C0C;
-
-  }
+  
 
 
-  @media screen and (min-width: 40.375em) {
-    .footer__nav > * {
-      flex: 1;
-    }
-
-    .footer__addr {
-      flex: 1 0px;
-    }
-
-    .footer__nav {
-      flex: 2 0px;
-    }
-  }
 
   @media (min-width: 1023px) {
     .redes {
@@ -271,6 +227,11 @@
   }
 
         
+
+
+
+
+
 
 
 

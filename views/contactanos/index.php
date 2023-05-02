@@ -19,7 +19,7 @@ session_start();
   <h1 style="padding: 0.5em; position: relative; top: 25px">Contáctanos</h1>
   <p>Completa el siguiente formulario para contactarse con nosotros,<br> donde te responderemos lo más rápido y breve posible. Muchas Gracias!.</p>
   <div class="container-form">
-    <img src="#" alt="#">
+  
     <form action="enviarContactanos" method="post">
       <label for="nomApe">Nombre y apellido</label>
       <input type="text" name="nomApe" id="nomApe">
