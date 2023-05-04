@@ -13,9 +13,23 @@
 <body>
 <?php	require_once("views/layouts/navbar.php");?>
 
-<div style="padding: 0.5em; position: relative; " class="encabezado">
-  <h1 >Blog</h1>
-  <p>­­Te invitamos a que nos conozcas un poco más, y no solo eso, a aprender cosas nuevas sobre la empresa y los diferentes productos que te brindamos, porque tu también eres parte de nuestra familia. Cada momento queremos compartirlo contigo también... ¡Bienvenido!­</p>
+<div class="container-cabezera">
+
+   <div class="panel-cabezera">  
+     <h1 class="text">Blog YUNTERO</h1>
+ 
+   </div>
+   <nav class="nav-cabezera">
+    <ul>
+      <li><a href="#">Todos</a></li>
+      <li><a href="#">Categoría 1</a></li>
+      <li><a href="#">Categoría 2</a></li>
+      <li><a href="#">Categoría 3</a></li>
+      <li><a href="#">Categoría 4</a></li>
+      <li><a href="#">Categoría 5</a></li>
+    </ul>
+  </nav>
+
 </div>
 
 <?php 
@@ -23,63 +37,138 @@
 
   require_once("views/blog/articulos.php");
 ?>
-<div class="articulo">
-  <img src="data:image/jpg;base64,<?php echo base64_encode($Fila['imagen'])?>" alt="#">
-  <div class="articulo__content">
-    <div class="articulo__content-encabezado">
-      <h2><?php echo $Fila['titular']?></h2>
-      <p><?php echo $Fila['detalle']?></p>
+
+
+<div class="container-cardblog">
+  <div class="row">
+    <div class="col-6  h-100">
+    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila['imagen'])?>" alt="#">
     </div>
-    <!-- <a href="#">seguir leyendo <span class="icon-chevron-small-right icon2"></span></a> <- considero sacar el enlace -->
+    <div class="col-6">
+      <div class="row">
+        <div class="col-12 my-2">
+          <h4>Categoria 1</h4>
+        </div>
+        <div class="col-12 my-2">
+        <h2><?php echo $Fila['titular']?></h2>
+        </div>
+        <div class="col-12 my-2">
+        <p class="texto-prueba"><?php echo $Fila['detalle']?></p>
+        </div>
+        <div class="col-12 my-2">
+          <div class="row">
+            <div class="col-md-3  ">
+              <div class="img-autor"> 
+              </div>
+            </div>
+            <div class="col-md-7 text-autor">
+              
+                  <p>Nombre del autor</p>
+                  <p >Abril 25,2020</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="articulo-cards">
-  <div class="articulo-cards__card">
-    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila2['imagen'])?>" alt="#">
-    <h2><?php echo $Fila2['titular']?></h2>
-    <p><?php echo $Fila2['detalle']?></p>
+<div class="container-cardblog">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila2['imagen'])?>" alt="#" class="card-img-top">
+      <div class="card-body">
+      <h4>Categoria 2</h4>
+
+      <h2><?php echo $Fila2['titular']?></h2>
+      <p><?php echo $Fila2['detalle']?></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
   </div>
-  <div class="articulo-cards__card">
-    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila3['imagen'])?>" alt="#">
-    <h2><?php echo $Fila3['titular']?></h2>
-    <p><?php echo $Fila3['detalle']?></p>
+  <div class="col">
+    <div class="card h-100">
+    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila3['imagen'])?>" alt="#" class="card-img-top">
+      <div class="card-body">
+      <h4>Categoria 3</h4>
+      <h2><?php echo $Fila3['titular']?></h2>
+      <p><?php echo $Fila3['detalle']?></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
   </div>
-  <div class="articulo-cards__card">
-    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila4['imagen'])?>" alt="#">
-    <h2><?php echo $Fila4['titular']?></h2>
-    <p><?php echo $Fila4['detalle']?></p>
+  <div class="col">
+    <div class="card h-100">
+    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila4['imagen'])?>" alt="#" class="card-img-top">
+      <div class="card-body">
+        <h4>Categoria 4</h4>
+      <h2><?php echo $Fila4['titular']?></h2>
+      <p><?php echo $Fila4['detalle']?></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
   </div>
 </div>
-
-<div class="articulo-2">
-  <h2><?php echo $Fila5['titular']?></h2>
-  <!-- <p><span id="autor">autor</span> - <span id="fecha">fecha</span></p> -->
-  <img src="data:image/jpg;base64,<?php echo base64_encode($Fila5['imagen'])?>" alt="#">
-  <p><?php echo $Fila5['detalle']?></p>
 </div>
 
-<div class="articulo-cards">
-  <div class="articulo-cards__card">
-    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila6['imagen'])?>" alt="#">
-    <h2><?php echo $Fila6['titular']?></h2>
-    <p><?php echo $Fila6['detalle']?></p>
+
+<div class="container-cardblog">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila5['imagen'])?>" alt="#" class="card-img-top">
+      <div class="card-body">
+      <h4>Categoria 5</h4>
+
+      <h2><?php echo $Fila5['titular']?></h2>
+      <p><?php echo $Fila5['detalle']?></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
   </div>
-  <div class="articulo-cards__card">
-    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila7['imagen'])?>" alt="#">
-    <h2><?php echo $Fila7['titular']?></h2>
-    <p><?php echo $Fila7['detalle']?></p>
+  <div class="col">
+    <div class="card h-100">
+    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila6['imagen'])?>" alt="#" class="card-img-top">
+      <div class="card-body">
+      <h4>Categoria 6</h4>
+      <h2><?php echo $Fila6['titular']?></h2>
+      <p><?php echo $Fila6['detalle']?></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
   </div>
-  <div class="articulo-cards__card">
-    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila8['imagen'])?>" alt="#">
-    <h2><?php echo $Fila8['titular']?></h2>
-    <p><?php echo $Fila8['detalle']?></p>
+  <div class="col">
+    <div class="card h-100">
+    <img src="data:image/jpg;base64,<?php echo base64_encode($Fila7['imagen'])?>" alt="#" class="card-img-top">
+      <div class="card-body">
+        <h4>Categoria 7</h4>
+      <h2><?php echo $Fila7['titular']?></h2>
+      <p><?php echo $Fila7['detalle']?></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
   </div>
+
+</div>
 </div>
 
-<!-- <div class="button">
-  <button>Ver todos nuestros articulos</button> <-Este consideraría borrarlo 
-</div> -->
+
+
+
 
 <?php require_once("views/layouts/footer.php") ?>
 </body>
