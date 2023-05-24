@@ -3,7 +3,6 @@
   --secondary-color: white;
 }
 .panel-cabezera{
-  background-color:cornflowerblue ;
   width: 100%;
   max-width: 1676px;
   height: 360px;
@@ -11,10 +10,11 @@
   margin: 0 auto;
   padding: 20px;
   display: flex;
+  background-color: rgb(91, 103, 146) !important;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  border-radius: 40px;
+  border-radius: 50px !important;
 
 }
 .text{
@@ -23,9 +23,17 @@
     font-size: 4vw;
 
 }
+.imagen-responsive {
+  max-width: 1451px;
+  max-height: 818px;
+}
 .container-cabezera{
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.container-cardblog img{
+  border-radius: 50px;
 }
 
 .nav-cabezera {
@@ -62,13 +70,19 @@
 
 .container-cardblog {
   width: 100%;
-  max-width: 1200px;
+  cursor: pointer;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
+  padding-bottom: 10px;
   box-sizing: border-box;
 }
-
-
+.img-cardblog{
+  border-radius: 50px;
+}
+.titulo-text{
+  color:rgb(3, 3, 77);
+}
 .col-6 img {
   max-width: 100%;
   height: auto;

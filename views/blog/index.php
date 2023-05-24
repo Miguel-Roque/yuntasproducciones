@@ -15,13 +15,13 @@
 
 <div class="container-cabezera">
 
-   <div class="panel-cabezera">  
+   <div class="panel-cabezera card border-0">  
      <h1 class="text">Blog YUNTERO</h1>
  
    </div>
    <nav class="nav-cabezera">
     <ul>
-      <li><a href="#">Todos</a></li>
+      <li><a href="detalles">Todos</a></li>
       <li><a href="#">Categoría 1</a></li>
       <li><a href="#">Categoría 2</a></li>
       <li><a href="#">Categoría 3</a></li>
@@ -38,33 +38,32 @@
   require_once("views/blog/articulos.php");
 ?>
 
-
-<div class="container-cardblog">
+<div class="container-cardblog" onclick="window.location.href='detalles'" >
   <div class="row">
-    <div class="col-6  h-100">
+    <div class="col-6 card border-0 h-100">
     <img src="data:image/jpg;base64,<?php echo base64_encode($Fila['imagen'])?>" alt="#">
     </div>
     <div class="col-6">
-      <div class="row">
+      <div class="row ps-5">
         <div class="col-12 my-2">
-          <h4>Categoria 1</h4>
+          <h4 class="fw-light text-primary">Categoria 1</h4>
         </div>
         <div class="col-12 my-2">
-        <h2><?php echo $Fila['titular']?></h2>
+        <h2 class="fw-bold titulo-text"><?php echo $Fila['titular']?></h2>
         </div>
         <div class="col-12 my-2">
-        <p class="texto-prueba"><?php echo $Fila['detalle']?></p>
+        <p class=""><?php echo $Fila['detalle']?></p>
         </div>
         <div class="col-12 my-2">
           <div class="row">
-            <div class="col-md-3  ">
-              <div class="img-autor"> 
+            <div class="col-md-3  d-flex justify-content-center">
+              <div class="img-autor "> 
               </div>
             </div>
             <div class="col-md-7 text-autor">
               
-                  <p>Nombre del autor</p>
-                  <p >Abril 25,2020</p>
+                  <p class="fw-bold mb-0 titulo-text">Nombre del autor</p>
+                  <p class="fw-light text-primary">Abril 25,2020</p>
              
             </div>
           </div>
@@ -73,47 +72,81 @@
     </div>
   </div>
 </div>
-
 <div class="container-cardblog">
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-5">
   <div class="col">
-    <div class="card h-100">
+    <div class="card border-0 h-100">
     <img src="data:image/jpg;base64,<?php echo base64_encode($Fila2['imagen'])?>" alt="#" class="card-img-top">
       <div class="card-body">
-      <h4>Categoria 2</h4>
+      <h4 class="fw-light text-primary">Categoria 2</h4>
 
-      <h2><?php echo $Fila2['titular']?></h2>
+      <h2 class="fw-bold titulo-text"><?php echo $Fila2['titular']?></h2>
       <p><?php echo $Fila2['detalle']?></p>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+      <div class="card-footer bg-transparent">
+      <div class="col-12 my-2">
+          <div class="row">
+            <div class="col-md-3  d-flex justify-content-center">
+              <div class="img-autor "> 
+              </div>
+            </div>
+            <div class="col-md-7 text-autor">
+              
+                  <p class="fw-bold mb-0 titulo-text">Nombre del autor</p>
+                  <p class="fw-light text-primary">Abril 25,2020</p>
+             
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card h-100">
+    <div class="card border-0 h-100">
     <img src="data:image/jpg;base64,<?php echo base64_encode($Fila3['imagen'])?>" alt="#" class="card-img-top">
       <div class="card-body">
-      <h4>Categoria 3</h4>
-      <h2><?php echo $Fila3['titular']?></h2>
+      <h4 class="fw-light text-primary">Categoria 3</h4>
+      <h2 class="fw-bold titulo-text"><?php echo $Fila3['titular']?></h2>
       <p><?php echo $Fila3['detalle']?></p>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+      <div class="col-12 my-2">
+          <div class="row">
+            <div class="col-md-3  d-flex justify-content-center">
+              <div class="img-autor "> 
+              </div>
+            </div>
+            <div class="col-md-7 text-autor">
+              
+                  <p class="fw-bold mb-0 titulo-text">Nombre del autor</p>
+                  <p class="fw-light text-primary">Abril 25,2020</p>
+             
+            </div>
+          </div>
+        </div>
     </div>
   </div>
   <div class="col">
-    <div class="card h-100">
+    <div class="card border-0 h-100">
     <img src="data:image/jpg;base64,<?php echo base64_encode($Fila4['imagen'])?>" alt="#" class="card-img-top">
       <div class="card-body">
-        <h4>Categoria 4</h4>
-      <h2><?php echo $Fila4['titular']?></h2>
+        <h4 class="fw-light text-primary">Categoria 4</h4>
+      <h2 class="fw-bold titulo-text"><?php echo $Fila4['titular']?></h2>
       <p><?php echo $Fila4['detalle']?></p>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+      <div class="col-12 my-2">
+          <div class="row">
+            <div class="col-md-3  d-flex justify-content-center">
+              <div class="img-autor "> 
+              </div>
+            </div>
+            <div class="col-md-7 text-autor">
+              
+                  <p class="fw-bold mb-0 titulo-text">Nombre del autor</p>
+                  <p class="fw-light text-primary">Abril 25,2020</p>
+             
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </div>
@@ -121,45 +154,78 @@
 
 
 <div class="container-cardblog">
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-5">
   <div class="col">
-    <div class="card h-100">
+    <div class="card border-0 h-100">
     <img src="data:image/jpg;base64,<?php echo base64_encode($Fila5['imagen'])?>" alt="#" class="card-img-top">
       <div class="card-body">
-      <h4>Categoria 5</h4>
+      <h4 class="fw-light text-primary">Categoria 5</h4>
 
-      <h2><?php echo $Fila5['titular']?></h2>
+      <h2 class="fw-bold titulo-text"><?php echo $Fila5['titular']?></h2>
       <p><?php echo $Fila5['detalle']?></p>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+      <div class="col-12 my-2">
+          <div class="row">
+            <div class="col-md-3  d-flex justify-content-center">
+              <div class="img-autor "> 
+              </div>
+            </div>
+            <div class="col-md-7 text-autor">
+              
+                  <p class="fw-bold mb-0 titulo-text">Nombre del autor</p>
+                  <p class="fw-light text-primary">Abril 25,2020</p>
+             
+            </div>
+          </div>
+        </div>
     </div>
   </div>
   <div class="col">
-    <div class="card h-100">
+    <div class="card border-0 h-100">
     <img src="data:image/jpg;base64,<?php echo base64_encode($Fila6['imagen'])?>" alt="#" class="card-img-top">
       <div class="card-body">
-      <h4>Categoria 6</h4>
-      <h2><?php echo $Fila6['titular']?></h2>
+      <h4 class="fw-light text-primary">Categoria 6</h4>
+      <h2 class="fw-bold titulo-text"><?php echo $Fila6['titular']?></h2>
       <p><?php echo $Fila6['detalle']?></p>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+      <div class="col-12 my-2">
+          <div class="row">
+            <div class="col-md-3  d-flex justify-content-center">
+              <div class="img-autor "> 
+              </div>
+            </div>
+            <div class="col-md-7 text-autor">
+              
+                  <p class="fw-bold mb-0 titulo-text">Nombre del autor</p>
+                  <p class="fw-light text-primary">Abril 25,2020</p>
+             
+            </div>
+          </div>
+        </div>
     </div>
   </div>
   <div class="col">
-    <div class="card h-100">
+    <div class="card border-0 h-100">
     <img src="data:image/jpg;base64,<?php echo base64_encode($Fila7['imagen'])?>" alt="#" class="card-img-top">
       <div class="card-body">
-        <h4>Categoria 7</h4>
-      <h2><?php echo $Fila7['titular']?></h2>
+        <h4 class="fw-light text-primary">Categoria 7</h4>
+      <h2 class="fw-bold titulo-text"><?php echo $Fila7['titular']?></h2>
       <p><?php echo $Fila7['detalle']?></p>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
+      <div class="col-12 my-2">
+          <div class="row">
+            <div class="col-md-3  d-flex justify-content-center">
+              <div class="img-autor "> 
+              </div>
+            </div>
+            <div class="col-md-7 text-autor">
+              
+                  <p class="fw-bold mb-0 titulo-text">Nombre del autor</p>
+                  <p class="fw-light text-primary">Abril 25,2020</p>
+             
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 
