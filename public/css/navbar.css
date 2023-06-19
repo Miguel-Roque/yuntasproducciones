@@ -45,7 +45,11 @@ nav{
 .logo{
     height: 150px;
     width: 150px;
-
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 nav.nav-principal ul{
     margin-right: 20px;
@@ -186,8 +190,13 @@ header nav.nav-principal ul li:hover .submenu9{
         font-size: 16px;
     }
 }
+@media (max-width: 1000px){
+    nav.nav-principal ul li a{
+        font-size: 16px;
+    }
+}
 
-@media (max-width: 858px){
+@media (max-width: 920px){
     .checkbtn{
         display: block;
     }

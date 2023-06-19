@@ -250,13 +250,13 @@ header nav ul li:hover .submenu9{
 /**
     media querys
 */
-@media (max-width: 952px){
+@media (max-width: 1020px){
     
     nav ul li a{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
-@media (max-width: 858px){
+@media (max-width: 920px){
     
     ul{
         position: fixed;
@@ -425,4 +425,7 @@ header nav ul li:hover .submenu9{
         height: 30vh;
     }
 
+}
+.container-responsive{
+    background-color: red;
 }

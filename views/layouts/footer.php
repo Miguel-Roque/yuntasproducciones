@@ -87,11 +87,11 @@
             <a href="#" class=""><img src="public/img/mast.png" alt="Mastercard Yuntas" class="img-fluid" style="max-width: 70px;"></a>
           </li>
         </ul>
-        <ul class=" mt-5 mx-5 text-center">
-        <div class="text-center">
-          <img src="public/img/Ylogo.png" class="img-fluid" alt="" style="max-width: 200px;"> 
-        </div>
-      </ul>
+        <!--<ul class=" mt-5 mx-5 text-center">
+          <div class="text-center">
+            <img src="public/img/Ylogo.png" class="img-fluid" alt="" style="max-width: 200px;"> 
+          </div>
+        </ul>-->
       </li>
 
       

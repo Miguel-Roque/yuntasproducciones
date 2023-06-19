@@ -42,7 +42,7 @@
 
         </div>
         <div class="carousel-item" data-id="2" data-bs-interval="3500" id="item_img_2">
-          <img src="public/img/fondo1.webp" alt="slide1" class="w-100 h-100">
+          <img src="public/img/fondo1.webp" alt="slide1" class="w-100 h-100 cambio-responsive">
            <div class="carousel-caption"> 
               <a href="https://yuntasproducciones.com/blog">
                       <button type="button" class="boton-neon-1">
@@ -88,7 +88,7 @@
             <img width='60' height='50' src="public/img/icons_categorias/001.png" class="img_one" alt="">
             <img width='60' height='50' src="public/img/icons_categorias/10.png" class="img_two" alt="">
             <span>
-              Pantallas Led
+              Pantalla Led
             </span>
           </a>
         </li>
@@ -151,7 +151,7 @@
 
   <div class="container_productos" id="productosbanner" style="background: #fff;">
     <h1 class="titulos2">
-      <span >Conoce Nuestros Productos</span>
+      <span >Conoce Nuestros productos</span>
     </h1>
     <h2 class="subtitulo2  text-center fs-1 ">Esto Tenemos para ti</h2>
     <div class="container-sm py-5">
